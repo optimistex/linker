@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012.01.04 15:30:53.949.pas,D:\town\d2010\linker\project\forms\ufHelp.pas=</Transaction>
+    <Transaction>2012.01.04 15:30:53.949.dfm,D:\town\d2010\linker\project\forms\ufHelp.dfm=</Transaction>
+    <Transaction>2012.01.04 21:53:09.047.pas,D:\town\d2010\linker\project\Unit1.pas=D:\town\d2010\linker\project\forms\ufStatistics.pas</Transaction>
+    <Transaction>2012.01.04 21:53:09.047.dfm,D:\town\d2010\linker\project\Unit1.dfm=D:\town\d2010\linker\project\forms\ufStatistics.dfm</Transaction>
+    <Transaction>2012.08.30 14:51:09.060.pas,D:\town\d2010\linker\project\Unit1.pas=D:\town\d2010\linker\project\units\uClasses.pas</Transaction>
+    <Transaction>2012.08.30 14:55:35.762.pas,D:\town\d2010\linker\project\forms\ufMain.pas=D:\town\d2010\linker\project\forms\ufMain2.pas</Transaction>
+    <Transaction>2012.08.30 14:55:35.762.dfm,D:\town\d2010\linker\project\forms\ufMain.dfm=D:\town\d2010\linker\project\forms\ufMain2.dfm</Transaction>
+    <Transaction>2012.08.30 15:57:21.721.pas,D:\town\d2010\linker\project\Unit1.pas=D:\town\d2010\linker\project\frame\fmApplicationList.pas</Transaction>
+    <Transaction>2012.08.30 15:57:21.721.dfm,D:\town\d2010\linker\project\Unit1.dfm=D:\town\d2010\linker\project\frame\fmApplicationList.dfm</Transaction>
+    <Transaction>2013.01.10 11:06:58.293.pas,D:\town\d2010\linker\project\units\XmlRpc_Client.pas=</Transaction>
+  </Transactions>
+</BorlandProject>
