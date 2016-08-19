@@ -85,7 +85,6 @@ object fMainLinker: TfMainLinker
     Caption = ' '
     CaptionEx.Strings = (
       ' ')
-    CaptionPositions.CaptionCenter = True
     DoubleBuffered = True
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText

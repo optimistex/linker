@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <linker version="1.1">
 	<options>
-		<screen scr_width="1181" scr_height="616" Left="440" Top="76" Width="303" Height="507"/>
+		<screen scr_width="1215" scr_height="644" Left="461" Top="102" Width="303" Height="507"/>
 		<option name="StartMinimized" value="0"/>
 		<option name="GlobalHotKey_ShowApp" value="Alt+F1"/>
 		<option name="AlphaBlend" value="0"/>
@@ -15,7 +15,7 @@
 		<option name="SkipCorruptedLinksOnFilter" value="1"/>
 		<option name="Stat_NumberOfStarts" value="1"/>
 		<option name="AutoUpdate_Enabled" value="1"/>
-		<option name="AutoUpdate_date" value="05.02.2013 11:17:05"/>
+		<option name="AutoUpdate_date" value="20.08.2016 16:55:44"/>
 		<option name="AppList_ColorLinkText" value="0"/>
 		<option name="AppList_ColorLinkTextErr" value="255"/>
 		<option name="AppList_ColorGroupText" value="15793151"/>
