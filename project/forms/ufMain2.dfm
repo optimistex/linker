@@ -2,7 +2,7 @@ object fMainLinker: TfMainLinker
   Left = 594
   Top = 257
   AlphaBlendValue = 240
-  Caption = 'Linker2'
+  Caption = '2'
   ClientHeight = 351
   ClientWidth = 261
   Color = clBtnFace

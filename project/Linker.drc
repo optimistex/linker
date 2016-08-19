@@ -8,171 +8,171 @@
   resources were bound to the produced executable.
 */
 
-#define OverbyteIcsCharsetUtils_sUnicodeUTF8 65056
-#define OverbyteIcsCharsetUtils_sVietnameseWindows 65057
-#define OverbyteIcsCharsetUtils_sWesternEuropeanISO 65058
-#define OverbyteIcsCharsetUtils_sWesternEuropeanWindows 65059
+#define OverbyteIcsCharsetUtils_sVietnameseWindows 65056
+#define OverbyteIcsCharsetUtils_sWesternEuropeanISO 65057
+#define OverbyteIcsCharsetUtils_sWesternEuropeanWindows 65058
+#define OverbyteIcsHttpContCod_ERR_GETCODING_OVERRIDE 65059
 #define OleConst_sNoRunningObject 65060
-#define OverbyteIcsCharsetUtils_sCyrillicKOI8U 65072
-#define OverbyteIcsCharsetUtils_sCyrillicWindows 65073
-#define OverbyteIcsCharsetUtils_sEstonianISO 65074
-#define OverbyteIcsCharsetUtils_sGreekISO 65075
-#define OverbyteIcsCharsetUtils_sGreekWindows 65076
-#define OverbyteIcsCharsetUtils_sHebrewISOLogical 65077
-#define OverbyteIcsCharsetUtils_sHebrewISOVisual 65078
-#define OverbyteIcsCharsetUtils_sHebrewWindows 65079
-#define OverbyteIcsCharsetUtils_sJapaneseJIS 65080
-#define OverbyteIcsCharsetUtils_sKorean 65081
-#define OverbyteIcsCharsetUtils_sKoreanEUC 65082
-#define OverbyteIcsCharsetUtils_sLatin9 65083
-#define OverbyteIcsCharsetUtils_sThaiWindows 65084
-#define OverbyteIcsCharsetUtils_sTurkishISO 65085
-#define OverbyteIcsCharsetUtils_sTurkishWindows 65086
-#define OverbyteIcsCharsetUtils_sUnicodeUTF7 65087
-#define TB2Consts_STBChevronItemMoreButtonsHint 65088
-#define TB2Consts_STBDockParentNotAllowed 65089
-#define TB2Consts_STBDockCannotChangePosition 65090
-#define OverbyteIcsHttpContCod_ERR_GETCODING_OVERRIDE 65091
-#define OverbyteIcsCharsetUtils_sArabicISO 65092
-#define OverbyteIcsCharsetUtils_sArabicWindows 65093
-#define OverbyteIcsCharsetUtils_sBalticISO 65094
-#define OverbyteIcsCharsetUtils_sBalticWindows 65095
-#define OverbyteIcsCharsetUtils_sCentralEuropeanISO 65096
-#define OverbyteIcsCharsetUtils_sCentralEuropeanWindows 65097
-#define OverbyteIcsCharsetUtils_sChineseTraditionalBig5 65098
-#define OverbyteIcsCharsetUtils_sChineseSimplifiedGB18030 65099
-#define OverbyteIcsCharsetUtils_sChineseSimplifiedGB2312 65100
-#define OverbyteIcsCharsetUtils_sChineseSimplifiedHZ 65101
-#define OverbyteIcsCharsetUtils_sCyrillicISO 65102
-#define OverbyteIcsCharsetUtils_sCyrillicKOI8R 65103
-#define pnglang_EPNGUnknownInterlaceText 65104
-#define pnglang_EPNGCannotAssignChunkText 65105
-#define pnglang_EPNGUnexpectedEndText 65106
-#define pnglang_EPNGNoImageDataText 65107
-#define pnglang_EPNGCannotAddChunkText 65108
-#define pnglang_EPNGCannotAddInvalidImageText 65109
-#define pnglang_EPNGCouldNotLoadResourceText 65110
-#define pnglang_EPNGOutMemoryText 65111
-#define pnglang_EPNGCannotChangeTransparentText 65112
-#define pnglang_EPNGHeaderNotPresentText 65113
-#define pnglang_EInvalidNewSize 65114
-#define pnglang_EInvalidSpec 65115
-#define TB2Consts_STBToolbarIndexOutOfBounds 65116
-#define TB2Consts_STBToolbarItemReinserted 65117
-#define TB2Consts_STBToolbarItemParentInvalid 65118
-#define TB2Consts_STBViewerNotFound 65119
-#define VirtualTrees_SStreamTooSmall 65120
-#define VirtualTrees_SCorruptStream1 65121
-#define VirtualTrees_SCorruptStream2 65122
-#define VirtualTrees_SClipboardFailed 65123
-#define VirtualTrees_SCannotSetUserData 65124
-#define pnglang_EPngInvalidCRCText 65125
-#define pnglang_EPNGInvalidIHDRText 65126
-#define pnglang_EPNGMissingMultipleIDATText 65127
-#define pnglang_EPNGZLIBErrorText 65128
-#define pnglang_EPNGInvalidPaletteText 65129
-#define pnglang_EPNGInvalidFileHeaderText 65130
-#define pnglang_EPNGIHDRNotFirstText 65131
-#define pnglang_EPNGSizeExceedsText 65132
-#define pnglang_EPNGUnknownPalEntryText 65133
-#define pnglang_EPNGUnknownCriticalChunkText 65134
-#define pnglang_EPNGUnknownCompressionText 65135
-#define UcConsts_SMsgDlgRetry 65136
-#define UcConsts_SMsgDlgIgnore 65137
-#define UcConsts_SMsgDlgAll 65138
-#define UcConsts_SMsgDlgNoToAll 65139
-#define UcConsts_SMsgDlgYesToAll 65140
-#define UcConsts_SMsgDlgClose 65141
-#define UcConsts_SOutOfRange 65142
-#define UcConsts_SCannotOpenClipboard 65143
-#define UcConsts_SWindowsVistaRequired 65144
-#define UcConsts_SXPThemesRequired 65145
-#define UcConsts_STaskDlgButtonCaption 65146
-#define UcConsts_STaskDlgRadioButtonCaption 65147
-#define UcConsts_SInvalidTaskDlgButtonCaption 65148
-#define VirtualTrees_SWrongMoveError 65149
-#define VirtualTrees_SWrongStreamFormat 65150
-#define VirtualTrees_SWrongStreamVersion 65151
-#define DBConsts_SBcdOverflow 65152
-#define DBConsts_SInvalidBcdValue 65153
-#define DBConsts_SInvalidFormatType 65154
-#define DBConsts_SCouldNotParseTimeStamp 65155
-#define DBConsts_SInvalidSqlTimeStamp 65156
-#define UcConsts_SPropertyOutOfRange 65157
-#define UcConsts_SMsgDlgWarning 65158
-#define UcConsts_SMsgDlgError 65159
-#define UcConsts_SMsgDlgInformation 65160
-#define UcConsts_SMsgDlgConfirm 65161
-#define UcConsts_SMsgDlgYes 65162
-#define UcConsts_SMsgDlgNo 65163
-#define UcConsts_SMsgDlgOK 65164
-#define UcConsts_SMsgDlgCancel 65165
-#define UcConsts_SMsgDlgHelp 65166
-#define UcConsts_SMsgDlgAbort 65167
-#define DBConsts_SDataSetOpen 65168
-#define DBConsts_SNotEditing 65169
-#define DBConsts_SDataSetClosed 65170
-#define DBConsts_SDataSetEmpty 65171
-#define DBConsts_SDataSetReadOnly 65172
-#define DBConsts_SNestedDataSetClass 65173
-#define DBConsts_STextFalse 65174
-#define DBConsts_STextTrue 65175
-#define DBConsts_SParameterNotFound 65176
-#define DBConsts_SInvalidVersion 65177
-#define DBConsts_SBadFieldType 65178
-#define DBConsts_SProviderSQLNotSupported 65179
-#define DBConsts_SProviderExecuteNotSupported 65180
-#define DBConsts_SDataSetUnidirectional 65181
-#define DBConsts_SUnassignedVar 65182
-#define DBConsts_SRecordNotFound 65183
-#define DBConsts_SInvalidBoolValue 65184
-#define DBConsts_SInvalidFloatValue 65185
-#define DBConsts_SFieldTypeMismatch 65186
-#define DBConsts_SFieldSizeMismatch 65187
-#define DBConsts_SInvalidVarByteArray 65188
-#define DBConsts_SFieldOutOfRange 65189
-#define DBConsts_SFieldRequired 65190
-#define DBConsts_SDataSetMissing 65191
-#define DBConsts_SInvalidCalcType 65192
-#define DBConsts_SDuplicateIndexName 65193
-#define DBConsts_SNoIndexForFields 65194
-#define DBConsts_SIndexNotFound 65195
-#define DBConsts_SDBDuplicateName 65196
-#define DBConsts_SCircularDataLink 65197
-#define DBConsts_SLookupInfoError 65198
-#define DBConsts_SDataSourceChange 65199
-#define XMLConst_SMissingItemTag 65200
-#define XMLConst_SNodeReadOnly 65201
-#define XMLConst_SNoRefresh 65202
-#define XMLConst_SMissingFileName 65203
-#define XMLConst_SLine 65204
-#define DBConsts_SInvalidFieldSize 65205
-#define DBConsts_SInvalidFieldKind 65206
-#define DBConsts_SUnknownFieldType 65207
-#define DBConsts_SFieldNameMissing 65208
-#define DBConsts_SDuplicateFieldName 65209
-#define DBConsts_SFieldNotFound 65210
-#define DBConsts_SFieldAccessError 65211
-#define DBConsts_SFieldValueError 65212
-#define DBConsts_SFieldRangeError 65213
-#define DBConsts_SBcdFieldRangeError 65214
-#define DBConsts_SInvalidIntegerValue 65215
+#define OverbyteIcsCharsetUtils_sCyrillicWindows 65072
+#define OverbyteIcsCharsetUtils_sEstonianISO 65073
+#define OverbyteIcsCharsetUtils_sGreekISO 65074
+#define OverbyteIcsCharsetUtils_sGreekWindows 65075
+#define OverbyteIcsCharsetUtils_sHebrewISOLogical 65076
+#define OverbyteIcsCharsetUtils_sHebrewISOVisual 65077
+#define OverbyteIcsCharsetUtils_sHebrewWindows 65078
+#define OverbyteIcsCharsetUtils_sJapaneseJIS 65079
+#define OverbyteIcsCharsetUtils_sKorean 65080
+#define OverbyteIcsCharsetUtils_sKoreanEUC 65081
+#define OverbyteIcsCharsetUtils_sLatin9 65082
+#define OverbyteIcsCharsetUtils_sThaiWindows 65083
+#define OverbyteIcsCharsetUtils_sTurkishISO 65084
+#define OverbyteIcsCharsetUtils_sTurkishWindows 65085
+#define OverbyteIcsCharsetUtils_sUnicodeUTF7 65086
+#define OverbyteIcsCharsetUtils_sUnicodeUTF8 65087
+#define DBConsts_SInvalidFormatType 65088
+#define DBConsts_SCouldNotParseTimeStamp 65089
+#define DBConsts_SInvalidSqlTimeStamp 65090
+#define OverbyteIcsCharsetUtils_sArabicISO 65091
+#define OverbyteIcsCharsetUtils_sArabicWindows 65092
+#define OverbyteIcsCharsetUtils_sBalticISO 65093
+#define OverbyteIcsCharsetUtils_sBalticWindows 65094
+#define OverbyteIcsCharsetUtils_sCentralEuropeanISO 65095
+#define OverbyteIcsCharsetUtils_sCentralEuropeanWindows 65096
+#define OverbyteIcsCharsetUtils_sChineseTraditionalBig5 65097
+#define OverbyteIcsCharsetUtils_sChineseSimplifiedGB18030 65098
+#define OverbyteIcsCharsetUtils_sChineseSimplifiedGB2312 65099
+#define OverbyteIcsCharsetUtils_sChineseSimplifiedHZ 65100
+#define OverbyteIcsCharsetUtils_sCyrillicISO 65101
+#define OverbyteIcsCharsetUtils_sCyrillicKOI8R 65102
+#define OverbyteIcsCharsetUtils_sCyrillicKOI8U 65103
+#define DBConsts_SDataSetClosed 65104
+#define DBConsts_SDataSetEmpty 65105
+#define DBConsts_SDataSetReadOnly 65106
+#define DBConsts_SNestedDataSetClass 65107
+#define DBConsts_STextFalse 65108
+#define DBConsts_STextTrue 65109
+#define DBConsts_SParameterNotFound 65110
+#define DBConsts_SInvalidVersion 65111
+#define DBConsts_SBadFieldType 65112
+#define DBConsts_SProviderSQLNotSupported 65113
+#define DBConsts_SProviderExecuteNotSupported 65114
+#define DBConsts_SDataSetUnidirectional 65115
+#define DBConsts_SUnassignedVar 65116
+#define DBConsts_SRecordNotFound 65117
+#define DBConsts_SBcdOverflow 65118
+#define DBConsts_SInvalidBcdValue 65119
+#define DBConsts_SFieldTypeMismatch 65120
+#define DBConsts_SFieldSizeMismatch 65121
+#define DBConsts_SInvalidVarByteArray 65122
+#define DBConsts_SFieldOutOfRange 65123
+#define DBConsts_SFieldRequired 65124
+#define DBConsts_SDataSetMissing 65125
+#define DBConsts_SInvalidCalcType 65126
+#define DBConsts_SDuplicateIndexName 65127
+#define DBConsts_SNoIndexForFields 65128
+#define DBConsts_SIndexNotFound 65129
+#define DBConsts_SDBDuplicateName 65130
+#define DBConsts_SCircularDataLink 65131
+#define DBConsts_SLookupInfoError 65132
+#define DBConsts_SDataSourceChange 65133
+#define DBConsts_SDataSetOpen 65134
+#define DBConsts_SNotEditing 65135
+#define pnglang_EPNGHeaderNotPresentText 65136
+#define pnglang_EInvalidNewSize 65137
+#define pnglang_EInvalidSpec 65138
+#define DBConsts_SInvalidFieldSize 65139
+#define DBConsts_SInvalidFieldKind 65140
+#define DBConsts_SUnknownFieldType 65141
+#define DBConsts_SFieldNameMissing 65142
+#define DBConsts_SDuplicateFieldName 65143
+#define DBConsts_SFieldNotFound 65144
+#define DBConsts_SFieldAccessError 65145
+#define DBConsts_SFieldValueError 65146
+#define DBConsts_SFieldRangeError 65147
+#define DBConsts_SBcdFieldRangeError 65148
+#define DBConsts_SInvalidIntegerValue 65149
+#define DBConsts_SInvalidBoolValue 65150
+#define DBConsts_SInvalidFloatValue 65151
+#define pnglang_EPNGInvalidPaletteText 65152
+#define pnglang_EPNGInvalidFileHeaderText 65153
+#define pnglang_EPNGIHDRNotFirstText 65154
+#define pnglang_EPNGSizeExceedsText 65155
+#define pnglang_EPNGUnknownPalEntryText 65156
+#define pnglang_EPNGUnknownCriticalChunkText 65157
+#define pnglang_EPNGUnknownCompressionText 65158
+#define pnglang_EPNGUnknownInterlaceText 65159
+#define pnglang_EPNGCannotAssignChunkText 65160
+#define pnglang_EPNGUnexpectedEndText 65161
+#define pnglang_EPNGNoImageDataText 65162
+#define pnglang_EPNGCannotAddChunkText 65163
+#define pnglang_EPNGCannotAddInvalidImageText 65164
+#define pnglang_EPNGCouldNotLoadResourceText 65165
+#define pnglang_EPNGOutMemoryText 65166
+#define pnglang_EPNGCannotChangeTransparentText 65167
+#define UcConsts_SMsgDlgIgnore 65168
+#define UcConsts_SMsgDlgAll 65169
+#define UcConsts_SMsgDlgNoToAll 65170
+#define UcConsts_SMsgDlgYesToAll 65171
+#define UcConsts_SMsgDlgClose 65172
+#define UcConsts_SOutOfRange 65173
+#define UcConsts_SCannotOpenClipboard 65174
+#define UcConsts_SWindowsVistaRequired 65175
+#define UcConsts_SXPThemesRequired 65176
+#define UcConsts_STaskDlgButtonCaption 65177
+#define UcConsts_STaskDlgRadioButtonCaption 65178
+#define UcConsts_SInvalidTaskDlgButtonCaption 65179
+#define pnglang_EPngInvalidCRCText 65180
+#define pnglang_EPNGInvalidIHDRText 65181
+#define pnglang_EPNGMissingMultipleIDATText 65182
+#define pnglang_EPNGZLIBErrorText 65183
+#define XMLConst_SNodeReadOnly 65184
+#define XMLConst_SNoRefresh 65185
+#define XMLConst_SMissingFileName 65186
+#define XMLConst_SLine 65187
+#define UcConsts_SPropertyOutOfRange 65188
+#define UcConsts_SMsgDlgWarning 65189
+#define UcConsts_SMsgDlgError 65190
+#define UcConsts_SMsgDlgInformation 65191
+#define UcConsts_SMsgDlgConfirm 65192
+#define UcConsts_SMsgDlgYes 65193
+#define UcConsts_SMsgDlgNo 65194
+#define UcConsts_SMsgDlgOK 65195
+#define UcConsts_SMsgDlgCancel 65196
+#define UcConsts_SMsgDlgHelp 65197
+#define UcConsts_SMsgDlgAbort 65198
+#define UcConsts_SMsgDlgRetry 65199
+#define TB2Consts_STBDockCannotChangePosition 65200
+#define XMLConst_SDuplicateRegistration 65201
+#define XMLConst_SNoMatchingDOMVendor 65202
+#define XMLConst_SNoDOMNodeEx 65203
+#define XMLConst_SDOMNotSupported 65204
+#define XMLConst_SNodeExpected 65205
+#define XMLConst_SMSDOMNotInstalled 65206
+#define XMLConst_SNotActive 65207
+#define XMLConst_SNodeNotFound 65208
+#define XMLConst_SMissingNode 65209
+#define XMLConst_SNoAttributes 65210
+#define XMLConst_SInvalidNodeType 65211
+#define XMLConst_SMismatchedRegItems 65212
+#define XMLConst_SNotSingleTextNode 65213
+#define XMLConst_SNoDOMParseOptions 65214
+#define XMLConst_SMissingItemTag 65215
 #define ComConst_STooManyParams 65216
 #define ComConst_SDCOMNotInstalled 65217
-#define XMLConst_SDuplicateRegistration 65218
-#define XMLConst_SNoMatchingDOMVendor 65219
-#define XMLConst_SNoDOMNodeEx 65220
-#define XMLConst_SDOMNotSupported 65221
-#define XMLConst_SNodeExpected 65222
-#define XMLConst_SMSDOMNotInstalled 65223
-#define XMLConst_SNotActive 65224
-#define XMLConst_SNodeNotFound 65225
-#define XMLConst_SMissingNode 65226
-#define XMLConst_SNoAttributes 65227
-#define XMLConst_SInvalidNodeType 65228
-#define XMLConst_SMismatchedRegItems 65229
-#define XMLConst_SNotSingleTextNode 65230
-#define XMLConst_SNoDOMParseOptions 65231
+#define VirtualTrees_SWrongMoveError 65218
+#define VirtualTrees_SWrongStreamFormat 65219
+#define VirtualTrees_SWrongStreamVersion 65220
+#define VirtualTrees_SStreamTooSmall 65221
+#define VirtualTrees_SCorruptStream1 65222
+#define VirtualTrees_SCorruptStream2 65223
+#define VirtualTrees_SClipboardFailed 65224
+#define VirtualTrees_SCannotSetUserData 65225
+#define TB2Consts_STBToolbarIndexOutOfBounds 65226
+#define TB2Consts_STBToolbarItemReinserted 65227
+#define TB2Consts_STBToolbarItemParentInvalid 65228
+#define TB2Consts_STBViewerNotFound 65229
+#define TB2Consts_STBChevronItemMoreButtonsHint 65230
+#define TB2Consts_STBDockParentNotAllowed 65231
 #define Consts_SWindowsVistaRequired 65232
 #define Consts_SXPThemesRequired 65233
 #define Consts_STaskDlgButtonCaption 65234
@@ -479,12 +479,11 @@
 #define SysConst_SInvalidOp 65535
 STRINGTABLE
 BEGIN
-	OverbyteIcsCharsetUtils_sUnicodeUTF8,	"Unicode (UTF-8)"
 	OverbyteIcsCharsetUtils_sVietnameseWindows,	"Vietnamese (Windows)"
 	OverbyteIcsCharsetUtils_sWesternEuropeanISO,	"Western European (ISO)"
 	OverbyteIcsCharsetUtils_sWesternEuropeanWindows,	"Western European (Windows)"
+	OverbyteIcsHttpContCod_ERR_GETCODING_OVERRIDE,	"GetCoding must be overridden in %s"
 	OleConst_sNoRunningObject,	"Unable to retrieve a pointer to a running object registered with OLE for %s/%s"
-	OverbyteIcsCharsetUtils_sCyrillicKOI8U,	"Cyrillic (KOI8-U)"
 	OverbyteIcsCharsetUtils_sCyrillicWindows,	"Cyrillic (Windows)"
 	OverbyteIcsCharsetUtils_sEstonianISO,	"Estonian (ISO)"
 	OverbyteIcsCharsetUtils_sGreekISO,	"Greek (ISO)"
@@ -500,10 +499,10 @@ BEGIN
 	OverbyteIcsCharsetUtils_sTurkishISO,	"Turkish (ISO)"
 	OverbyteIcsCharsetUtils_sTurkishWindows,	"Turkish (Windows)"
 	OverbyteIcsCharsetUtils_sUnicodeUTF7,	"Unicode (UTF-7)"
-	TB2Consts_STBChevronItemMoreButtonsHint,	"More Buttons|"
-	TB2Consts_STBDockParentNotAllowed,	"A TTBDock control cannot be placed inside a tool window or another TTBDock"
-	TB2Consts_STBDockCannotChangePosition,	"Cannot change Position of a TTBDock if it already contains controls"
-	OverbyteIcsHttpContCod_ERR_GETCODING_OVERRIDE,	"GetCoding must be overridden in %s"
+	OverbyteIcsCharsetUtils_sUnicodeUTF8,	"Unicode (UTF-8)"
+	DBConsts_SInvalidFormatType,	"Invalid format type for BCD"
+	DBConsts_SCouldNotParseTimeStamp,	"Could not parse SQL TimeStamp string"
+	DBConsts_SInvalidSqlTimeStamp,	"Invalid SQL date/time values"
 	OverbyteIcsCharsetUtils_sArabicISO,	"Arabic (ISO)"
 	OverbyteIcsCharsetUtils_sArabicWindows,	"Arabic (Windows)"
 	OverbyteIcsCharsetUtils_sBalticISO,	"Baltic (ISO)"
@@ -516,72 +515,7 @@ BEGIN
 	OverbyteIcsCharsetUtils_sChineseSimplifiedHZ,	"Chinese Simplified (HZ)"
 	OverbyteIcsCharsetUtils_sCyrillicISO,	"Cyrillic (ISO)"
 	OverbyteIcsCharsetUtils_sCyrillicKOI8R,	"Cyrillic (KOI8-R)"
-	pnglang_EPNGUnknownInterlaceText,	"This \"Portable Network Graphics\" image uses an unknown interlace scheme which could not be decoded."
-	pnglang_EPNGCannotAssignChunkText,	"The chunks must be compatible to be assigned."
-	pnglang_EPNGUnexpectedEndText,	"This \"Portable Network Graphics\" image is invalid because the decoder found an unexpected end of the file."
-	pnglang_EPNGNoImageDataText,	"This \"Portable Network Graphics\" image contains no data."
-	pnglang_EPNGCannotAddChunkText,	"The program tried to add a existent critical chunk to the current image which is not allowed."
-	pnglang_EPNGCannotAddInvalidImageText,	"It's not allowed to add a new chunk because the current image is invalid."
-	pnglang_EPNGCouldNotLoadResourceText,	"The png image could not be loaded from the resource ID."
-	pnglang_EPNGOutMemoryText,	"Some operation could not be performed because the system is out of resources. Close some windows and try again."
-	pnglang_EPNGCannotChangeTransparentText,	"Setting bit transparency color is not allowed for png images containing alpha value for each pixel (COLOR_RGBALPHA and COLOR_GRAYSCALEALPHA)"
-	pnglang_EPNGHeaderNotPresentText,	"This operation is not valid because the current image contains no valid header."
-	pnglang_EInvalidNewSize,	"The new size provided for image resizing is invalid."
-	pnglang_EInvalidSpec,	"The \"Portable Network Graphics\" could not be created because invalid image type parameters have being provided."
-	TB2Consts_STBToolbarIndexOutOfBounds,	"Toolbar item index out of range"
-	TB2Consts_STBToolbarItemReinserted,	"Toolbar item already inserted"
-	TB2Consts_STBToolbarItemParentInvalid,	"Toolbar item cannot be inserted into container of type %s"
-	TB2Consts_STBViewerNotFound,	"An item viewer associated the specified item could not be found"
-	VirtualTrees_SStreamTooSmall,	"Unable to load tree structure, not enough data available."
-	VirtualTrees_SCorruptStream1,	"Stream data corrupt. A node's anchor chunk is missing."
-	VirtualTrees_SCorruptStream2,	"Stream data corrupt. Unexpected data after node's end position."
-	VirtualTrees_SClipboardFailed,	"Clipboard operation failed."
-	VirtualTrees_SCannotSetUserData,	"Cannot set initial user data because there is not enough user data space allocated."
-	pnglang_EPngInvalidCRCText,	"This \"Portable Network Graphics\" image is not valid because it contains invalid pieces of data (crc error)"
-	pnglang_EPNGInvalidIHDRText,	"The \"Portable Network Graphics\" image could not be loaded because one of its main piece of data (ihdr) might be corrupted"
-	pnglang_EPNGMissingMultipleIDATText,	"This \"Portable Network Graphics\" image is invalid because it has missing image parts."
-	pnglang_EPNGZLIBErrorText,	"Could not decompress the image because it contains invalid compressed data.\r\n Description: "
-	pnglang_EPNGInvalidPaletteText,	"The \"Portable Network Graphics\" image contains an invalid palette."
-	pnglang_EPNGInvalidFileHeaderText,	"The file being read is not a valid \"Portable Network Graphics\" image because it contains an invalid header. This file may be corrupted, try obtaining it again"
-	pnglang_EPNGIHDRNotFirstText,	"This \"Portable Network Graphics\" image is not supported or it might be invalid.\r\n(IHDR chunk is not the first)"
-	pnglang_EPNGSizeExceedsText,	"This \"Portable Network Graphics\" image is not supported because either it's width or height exceeds the maximum size, which is 65535 pixels length."
-	pnglang_EPNGUnknownPalEntryText,	"There is no such palette entry."
-	pnglang_EPNGUnknownCriticalChunkText,	"This \"Portable Network Graphics\" image contains an unknown critical part which could not be decoded."
-	pnglang_EPNGUnknownCompressionText,	"This \"Portable Network Graphics\" image is encoded with an unknown compression scheme which could not be decoded."
-	UcConsts_SMsgDlgRetry,	"&Повторить"
-	UcConsts_SMsgDlgIgnore,	"&Игнорировать"
-	UcConsts_SMsgDlgAll,	"&Все"
-	UcConsts_SMsgDlgNoToAll,	"&Нет для всех"
-	UcConsts_SMsgDlgYesToAll,	"&Да для Всех"
-	UcConsts_SMsgDlgClose,	"&Закрыть"
-	UcConsts_SOutOfRange,	"Value must be between %d and %d"
-	UcConsts_SCannotOpenClipboard,	"Cannot open clipboard: %s"
-	UcConsts_SWindowsVistaRequired,	"%s requires Windows Vista or later"
-	UcConsts_SXPThemesRequired,	"%s requires themes to be enabled"
-	UcConsts_STaskDlgButtonCaption,	"Button%d"
-	UcConsts_STaskDlgRadioButtonCaption,	"RadioButton%d"
-	UcConsts_SInvalidTaskDlgButtonCaption,	"Caption cannot be empty"
-	VirtualTrees_SWrongMoveError,	"Target node cannot be a child node of the node to be moved."
-	VirtualTrees_SWrongStreamFormat,	"Unable to load tree structure, the format is wrong."
-	VirtualTrees_SWrongStreamVersion,	"Unable to load tree structure, the version is unknown."
-	DBConsts_SBcdOverflow,	"BCD overflow"
-	DBConsts_SInvalidBcdValue,	"%s is not a valid BCD value"
-	DBConsts_SInvalidFormatType,	"Invalid format type for BCD"
-	DBConsts_SCouldNotParseTimeStamp,	"Could not parse SQL TimeStamp string"
-	DBConsts_SInvalidSqlTimeStamp,	"Invalid SQL date/time values"
-	UcConsts_SPropertyOutOfRange,	"%s property out of range"
-	UcConsts_SMsgDlgWarning,	"Предупреждение"
-	UcConsts_SMsgDlgError,	"Ошибка"
-	UcConsts_SMsgDlgInformation,	"Информация"
-	UcConsts_SMsgDlgConfirm,	"Подтверждение"
-	UcConsts_SMsgDlgYes,	"&Да"
-	UcConsts_SMsgDlgNo,	"&Нет"
-	UcConsts_SMsgDlgOK,	"OK"
-	UcConsts_SMsgDlgCancel,	"Отмена"
-	UcConsts_SMsgDlgHelp,	"&Помощь"
-	UcConsts_SMsgDlgAbort,	"&Прервать"
-	DBConsts_SDataSetOpen,	"Cannot perform this operation on an open dataset"
-	DBConsts_SNotEditing,	"Dataset not in edit or insert mode"
+	OverbyteIcsCharsetUtils_sCyrillicKOI8U,	"Cyrillic (KOI8-U)"
 	DBConsts_SDataSetClosed,	"Cannot perform this operation on a closed dataset"
 	DBConsts_SDataSetEmpty,	"Cannot perform this operation on an empty dataset"
 	DBConsts_SDataSetReadOnly,	"Cannot modify a read-only dataset"
@@ -596,8 +530,8 @@ BEGIN
 	DBConsts_SDataSetUnidirectional,	"Operation not allowed on a unidirectional dataset"
 	DBConsts_SUnassignedVar,	"Unassigned variant value"
 	DBConsts_SRecordNotFound,	"Record not found"
-	DBConsts_SInvalidBoolValue,	"'%s' is not a valid boolean value for field '%s'"
-	DBConsts_SInvalidFloatValue,	"'%s' is not a valid floating point value for field '%s'"
+	DBConsts_SBcdOverflow,	"BCD overflow"
+	DBConsts_SInvalidBcdValue,	"%s is not a valid BCD value"
 	DBConsts_SFieldTypeMismatch,	"Type mismatch for field '%s', expecting: %s actual: %s"
 	DBConsts_SFieldSizeMismatch,	"Size mismatch for field '%s', expecting: %d actual: %d"
 	DBConsts_SInvalidVarByteArray,	"Invalid variant type or size for field '%s'"
@@ -612,11 +546,11 @@ BEGIN
 	DBConsts_SCircularDataLink,	"Circular datalinks are not allowed"
 	DBConsts_SLookupInfoError,	"Lookup information for field '%s' is incomplete"
 	DBConsts_SDataSourceChange,	"DataSource cannot be changed"
-	XMLConst_SMissingItemTag,	"ItemTag property is not initialized"
-	XMLConst_SNodeReadOnly,	"Node is readonly"
-	XMLConst_SNoRefresh,	"Refresh is only supported if the FileName or XML properties are set"
-	XMLConst_SMissingFileName,	"FileName cannot be blank"
-	XMLConst_SLine,	"Line"
+	DBConsts_SDataSetOpen,	"Cannot perform this operation on an open dataset"
+	DBConsts_SNotEditing,	"Dataset not in edit or insert mode"
+	pnglang_EPNGHeaderNotPresentText,	"This operation is not valid because the current image contains no valid header."
+	pnglang_EInvalidNewSize,	"The new size provided for image resizing is invalid."
+	pnglang_EInvalidSpec,	"The \"Portable Network Graphics\" could not be created because invalid image type parameters have being provided."
 	DBConsts_SInvalidFieldSize,	"Invalid field size"
 	DBConsts_SInvalidFieldKind,	"Invalid FieldKind"
 	DBConsts_SUnknownFieldType,	"Field '%s' is of an unknown type"
@@ -628,8 +562,57 @@ BEGIN
 	DBConsts_SFieldRangeError,	"%g is not a valid value for field '%s'. The allowed range is %g to %g"
 	DBConsts_SBcdFieldRangeError,	"%s is not a valid value for field '%s'. The allowed range is %s to %s"
 	DBConsts_SInvalidIntegerValue,	"'%s' is not a valid integer value for field '%s'"
-	ComConst_STooManyParams,	"Dispatch methods do not support more than 64 parameters"
-	ComConst_SDCOMNotInstalled,	"DCOM not installed"
+	DBConsts_SInvalidBoolValue,	"'%s' is not a valid boolean value for field '%s'"
+	DBConsts_SInvalidFloatValue,	"'%s' is not a valid floating point value for field '%s'"
+	pnglang_EPNGInvalidPaletteText,	"The \"Portable Network Graphics\" image contains an invalid palette."
+	pnglang_EPNGInvalidFileHeaderText,	"The file being read is not a valid \"Portable Network Graphics\" image because it contains an invalid header. This file may be corrupted, try obtaining it again"
+	pnglang_EPNGIHDRNotFirstText,	"This \"Portable Network Graphics\" image is not supported or it might be invalid.\r\n(IHDR chunk is not the first)"
+	pnglang_EPNGSizeExceedsText,	"This \"Portable Network Graphics\" image is not supported because either it's width or height exceeds the maximum size, which is 65535 pixels length."
+	pnglang_EPNGUnknownPalEntryText,	"There is no such palette entry."
+	pnglang_EPNGUnknownCriticalChunkText,	"This \"Portable Network Graphics\" image contains an unknown critical part which could not be decoded."
+	pnglang_EPNGUnknownCompressionText,	"This \"Portable Network Graphics\" image is encoded with an unknown compression scheme which could not be decoded."
+	pnglang_EPNGUnknownInterlaceText,	"This \"Portable Network Graphics\" image uses an unknown interlace scheme which could not be decoded."
+	pnglang_EPNGCannotAssignChunkText,	"The chunks must be compatible to be assigned."
+	pnglang_EPNGUnexpectedEndText,	"This \"Portable Network Graphics\" image is invalid because the decoder found an unexpected end of the file."
+	pnglang_EPNGNoImageDataText,	"This \"Portable Network Graphics\" image contains no data."
+	pnglang_EPNGCannotAddChunkText,	"The program tried to add a existent critical chunk to the current image which is not allowed."
+	pnglang_EPNGCannotAddInvalidImageText,	"It's not allowed to add a new chunk because the current image is invalid."
+	pnglang_EPNGCouldNotLoadResourceText,	"The png image could not be loaded from the resource ID."
+	pnglang_EPNGOutMemoryText,	"Some operation could not be performed because the system is out of resources. Close some windows and try again."
+	pnglang_EPNGCannotChangeTransparentText,	"Setting bit transparency color is not allowed for png images containing alpha value for each pixel (COLOR_RGBALPHA and COLOR_GRAYSCALEALPHA)"
+	UcConsts_SMsgDlgIgnore,	"&Игнорировать"
+	UcConsts_SMsgDlgAll,	"&Все"
+	UcConsts_SMsgDlgNoToAll,	"&Нет для всех"
+	UcConsts_SMsgDlgYesToAll,	"&Да для Всех"
+	UcConsts_SMsgDlgClose,	"&Закрыть"
+	UcConsts_SOutOfRange,	"Value must be between %d and %d"
+	UcConsts_SCannotOpenClipboard,	"Cannot open clipboard: %s"
+	UcConsts_SWindowsVistaRequired,	"%s requires Windows Vista or later"
+	UcConsts_SXPThemesRequired,	"%s requires themes to be enabled"
+	UcConsts_STaskDlgButtonCaption,	"Button%d"
+	UcConsts_STaskDlgRadioButtonCaption,	"RadioButton%d"
+	UcConsts_SInvalidTaskDlgButtonCaption,	"Caption cannot be empty"
+	pnglang_EPngInvalidCRCText,	"This \"Portable Network Graphics\" image is not valid because it contains invalid pieces of data (crc error)"
+	pnglang_EPNGInvalidIHDRText,	"The \"Portable Network Graphics\" image could not be loaded because one of its main piece of data (ihdr) might be corrupted"
+	pnglang_EPNGMissingMultipleIDATText,	"This \"Portable Network Graphics\" image is invalid because it has missing image parts."
+	pnglang_EPNGZLIBErrorText,	"Could not decompress the image because it contains invalid compressed data.\r\n Description: "
+	XMLConst_SNodeReadOnly,	"Node is readonly"
+	XMLConst_SNoRefresh,	"Refresh is only supported if the FileName or XML properties are set"
+	XMLConst_SMissingFileName,	"FileName cannot be blank"
+	XMLConst_SLine,	"Line"
+	UcConsts_SPropertyOutOfRange,	"%s property out of range"
+	UcConsts_SMsgDlgWarning,	"Предупреждение"
+	UcConsts_SMsgDlgError,	"Ошибка"
+	UcConsts_SMsgDlgInformation,	"Информация"
+	UcConsts_SMsgDlgConfirm,	"Подтверждение"
+	UcConsts_SMsgDlgYes,	"&Да"
+	UcConsts_SMsgDlgNo,	"&Нет"
+	UcConsts_SMsgDlgOK,	"OK"
+	UcConsts_SMsgDlgCancel,	"Отмена"
+	UcConsts_SMsgDlgHelp,	"&Помощь"
+	UcConsts_SMsgDlgAbort,	"&Прервать"
+	UcConsts_SMsgDlgRetry,	"&Повторить"
+	TB2Consts_STBDockCannotChangePosition,	"Cannot change Position of a TTBDock if it already contains controls"
 	XMLConst_SDuplicateRegistration,	"\"%s\" DOMImplementation already registered"
 	XMLConst_SNoMatchingDOMVendor,	"No matching DOM Vendor: \"%s\""
 	XMLConst_SNoDOMNodeEx,	"Selected DOM Vendor does not support this property or method"
@@ -644,6 +627,23 @@ BEGIN
 	XMLConst_SMismatchedRegItems,	"Mismatched paramaters to RegisterChildNodes"
 	XMLConst_SNotSingleTextNode,	"Element \"%s\" does not contain a single text node"
 	XMLConst_SNoDOMParseOptions,	"DOM Implementation does not support IDOMParseOptions"
+	XMLConst_SMissingItemTag,	"ItemTag property is not initialized"
+	ComConst_STooManyParams,	"Dispatch methods do not support more than 64 parameters"
+	ComConst_SDCOMNotInstalled,	"DCOM not installed"
+	VirtualTrees_SWrongMoveError,	"Target node cannot be a child node of the node to be moved."
+	VirtualTrees_SWrongStreamFormat,	"Unable to load tree structure, the format is wrong."
+	VirtualTrees_SWrongStreamVersion,	"Unable to load tree structure, the version is unknown."
+	VirtualTrees_SStreamTooSmall,	"Unable to load tree structure, not enough data available."
+	VirtualTrees_SCorruptStream1,	"Stream data corrupt. A node's anchor chunk is missing."
+	VirtualTrees_SCorruptStream2,	"Stream data corrupt. Unexpected data after node's end position."
+	VirtualTrees_SClipboardFailed,	"Clipboard operation failed."
+	VirtualTrees_SCannotSetUserData,	"Cannot set initial user data because there is not enough user data space allocated."
+	TB2Consts_STBToolbarIndexOutOfBounds,	"Toolbar item index out of range"
+	TB2Consts_STBToolbarItemReinserted,	"Toolbar item already inserted"
+	TB2Consts_STBToolbarItemParentInvalid,	"Toolbar item cannot be inserted into container of type %s"
+	TB2Consts_STBViewerNotFound,	"An item viewer associated the specified item could not be found"
+	TB2Consts_STBChevronItemMoreButtonsHint,	"More Buttons|"
+	TB2Consts_STBDockParentNotAllowed,	"A TTBDock control cannot be placed inside a tool window or another TTBDock"
 	Consts_SWindowsVistaRequired,	"%s requires Windows Vista or later"
 	Consts_SXPThemesRequired,	"%s requires themes to be enabled"
 	Consts_STaskDlgButtonCaption,	"Button%d"
@@ -952,26 +952,26 @@ END
 
 /* c:\program files\embarcadero\rad studio\7.0\lib\Character.res */
 /* c:\program files\embarcadero\rad studio\7.0\lib\controls.res */
+/* D:\town\VCL\D2010\VirtualTreeviewV5.1.0\Source\VirtualTrees.res */
+/* D:\town\VCL\D2010\TBX components\SpTBXLib\Source\SpTBXGlyphs.res */
 /* c:\program files\embarcadero\rad studio\7.0\lib\buttons.res */
 /* c:\program files\embarcadero\rad studio\7.0\lib\filectrl.res */
-/* D:\town\VCL\D2010\VirtualTreeviewV5.1.0\Source\VirtualTrees.res */
-/* D:\town\VCL\UniversalControls\vcl\UcNetscapeSplitter.dcr */
 /* D:\town\VCL\UniversalControls\vcl\ucSkin.dcr */
 /* D:\town\VCL\UniversalControls\vcl\UcButtons.dcr */
-/* D:\town\VCL\D2010\TBX components\SpTBXLib\Source\SpTBXGlyphs.res */
+/* D:\town\VCL\UniversalControls\vcl\UcNetscapeSplitter.dcr */
 /* D:\town\VCL\UniversalControls\vcl\ucStdCtrls.dcr */
+/* D:\test\linker\project\forms\ufEditLink.dfm */
+/* D:\test\linker\project\forms\ufEditGroup.dfm */
+/* D:\test\linker\project\forms\ufAbout.dfm */
+/* D:\test\linker\project\forms\ufUpdater.dfm */
 /* D:\town\VCL\UniversalControls\vcl\ucExtCtrls.dcr */
-/* forms\ufTaskReminder.dfm */
-/* forms\ufStatistics.dfm */
-/* frame\frFrameColorEdit.dfm */
-/* forms\ufOptions.dfm */
-/* forms\ufUpdater.dfm */
-/* forms\ufAbout.dfm */
-/* forms\ufEditGroup.dfm */
-/* forms\ufEditLink.dfm */
-/* DataModule\uDM.dfm */
-/* frame\fmApplicationList.dfm */
-/* forms\ufMain2.dfm */
+/* D:\test\linker\project\frame\frFrameColorEdit.dfm */
+/* D:\test\linker\project\forms\ufOptions.dfm */
+/* D:\test\linker\project\forms\ufStatistics.dfm */
+/* D:\test\linker\project\forms\ufTaskReminder.dfm */
+/* D:\test\linker\project\forms\ufMain2.dfm */
+/* D:\test\linker\project\DataModule\uDM.dfm */
+/* D:\test\linker\project\frame\fmApplicationList.dfm */
 /* D:\test\linker\project\Linker.dres */
 /* D:\test\linker\project\Linker.res */
 /* D:\test\linker\project\Linker.drf */
