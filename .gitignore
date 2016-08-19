@@ -4,3 +4,6 @@ Thumbs.db
 *.bak
 *.7z
 modelsupport_*
+*.dproj.local
+output/*.elf
+output/*.map
