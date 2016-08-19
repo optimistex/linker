@@ -33,7 +33,7 @@ object fEditLink: TfEditLink
       Width = 26
       Height = 13
       Caption = #1054#1082#1085#1086
-      Version = '12.05.2012'
+      Version = '13.02.2014'
       WebLink = 'http://optitrex.ru'
     end
     object Label2: TUcLabel
@@ -42,7 +42,7 @@ object fEditLink: TfEditLink
       Width = 49
       Height = 13
       Caption = #1054#1087#1080#1089#1072#1085#1080#1077
-      Version = '12.05.2012'
+      Version = '13.02.2014'
       WebLink = 'http://optitrex.ru'
     end
     object cbShowCmd: TComboBox
@@ -165,7 +165,6 @@ object fEditLink: TfEditLink
       Width = 22
       Height = 22
       Action = actOpen
-      CaptionPositions.CaptionCenter = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -184,7 +183,6 @@ object fEditLink: TfEditLink
       Width = 22
       Height = 22
       Action = actOpenIcon
-      CaptionPositions.CaptionCenter = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -205,7 +203,6 @@ object fEditLink: TfEditLink
       Hint = #1054#1090#1085#1086#1089#1080#1090#1077#1083#1100#1085#1099#1081' '#1087#1091#1090#1100
       AllowAllUp = True
       ButtonStyle = bsImaged
-      CaptionPositions.CaptionCenter = True
       Down = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -248,7 +245,6 @@ object fEditLink: TfEditLink
       Width = 22
       Height = 22
       Action = actSelectFromFolder
-      CaptionPositions.CaptionCenter = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -267,7 +263,6 @@ object fEditLink: TfEditLink
       Width = 22
       Height = 22
       Action = actSelectToFolder
-      CaptionPositions.CaptionCenter = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -360,9 +355,6 @@ object fEditLink: TfEditLink
       Caption = #1054#1090#1084#1077#1085#1072
       CaptionEx.Strings = (
         #1054#1090#1084#1077#1085#1072)
-      CaptionPositions.CaptionCenter = False
-      CaptionPositions.CaptionLeft = 33
-      CaptionPositions.CaptionTop = 10
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -381,9 +373,6 @@ object fEditLink: TfEditLink
       Caption = 'OK'
       CaptionEx.Strings = (
         'OK')
-      CaptionPositions.CaptionCenter = False
-      CaptionPositions.CaptionLeft = 45
-      CaptionPositions.CaptionTop = 10
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11

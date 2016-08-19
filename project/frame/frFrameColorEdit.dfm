@@ -23,9 +23,6 @@ object FrameColorEdit: TFrameColorEdit
     Caption = #1042#1099#1073#1088#1072#1090#1100' '#1094#1074#1077#1090
     CaptionEx.Strings = (
       #1042#1099#1073#1088#1072#1090#1100' '#1094#1074#1077#1090)
-    CaptionPositions.CaptionCenter = False
-    CaptionPositions.CaptionLeft = 57
-    CaptionPositions.CaptionTop = 9
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -35,6 +32,7 @@ object FrameColorEdit: TFrameColorEdit
     Images.PosCenter = False
     Images.PosLeft = 0
     Images.PosTop = 0
+    ParentFont = False
     TabOrder = 0
     OnClick = UcWBtn_ColorClick
   end

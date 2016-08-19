@@ -27,9 +27,6 @@ object fEditGroup: TfEditGroup
     Caption = 'OK'
     CaptionEx.Strings = (
       'OK')
-    CaptionPositions.CaptionCenter = False
-    CaptionPositions.CaptionLeft = 45
-    CaptionPositions.CaptionTop = 10
     Default = True
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -48,9 +45,6 @@ object fEditGroup: TfEditGroup
     Caption = #1054#1090#1084#1077#1085#1072
     CaptionEx.Strings = (
       #1054#1090#1084#1077#1085#1072)
-    CaptionPositions.CaptionCenter = False
-    CaptionPositions.CaptionLeft = 33
-    CaptionPositions.CaptionTop = 10
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -65,7 +59,7 @@ object fEditGroup: TfEditGroup
     Width = 50
     Height = 13
     Caption = #1054#1087#1080#1089#1072#1085#1080#1077
-    Version = '12.05.2012'
+    Version = '13.02.2014'
     WebLink = 'http://optitrex.ru'
   end
   object LbEd_FileName: TLabeledEdit

@@ -30,7 +30,7 @@ object TaskReminder: TTaskReminder
     AutoSize = False
     Caption = 'UcLbl_Text'
     WordWrap = True
-    Version = '12.05.2012'
+    Version = '13.02.2014'
     WebLink = 'http://optitrex.ru'
   end
   object UcPanel1: TUcPanel
@@ -56,7 +56,6 @@ object TaskReminder: TTaskReminder
       Caption = #1054#1050
       CaptionEx.Strings = (
         #1054#1050)
-      CaptionPositions.CaptionCenter = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11

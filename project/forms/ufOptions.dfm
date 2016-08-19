@@ -43,7 +43,6 @@ object Options: TOptions
       Caption = 'OK'
       CaptionEx.Strings = (
         'OK')
-      CaptionPositions.CaptionCenter = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -66,7 +65,6 @@ object Options: TOptions
       Caption = #1054#1090#1084#1077#1085#1080#1090#1100
       CaptionEx.Strings = (
         #1054#1090#1084#1077#1085#1080#1090#1100)
-      CaptionPositions.CaptionCenter = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -83,11 +81,15 @@ object Options: TOptions
     Top = 0
     Width = 425
     Height = 387
-    ActivePage = TabSheet_Help
+    ActivePage = TabSheet_Styles
     Align = alClient
     TabOrder = 1
     object TabSheet_General: TTabSheet
       Caption = #1054#1073#1097#1080#1077
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       DesignSize = (
         417
         359)
@@ -272,6 +274,10 @@ object Options: TOptions
     object TabSheet_Additional: TTabSheet
       Caption = #1044#1086#1087#1086#1083#1085#1080#1090#1077#1083#1100#1085#1099#1077' '#1086#1087#1094#1080#1080
       ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       DesignSize = (
         417
         359)
@@ -329,7 +335,7 @@ object Options: TOptions
           AutoSize = False
           Caption = #1057#1083#1077#1076#1091#1102#1097#1077#1077' '#1086#1073#1085#1086#1074#1083#1077#1085#1080#1077' '#1079#1072#1087#1083#1072#1085#1080#1088#1086#1074#1072#1085#1086' '#1085#1072':'
           WordWrap = True
-          Version = '12.05.2012'
+          Version = '13.02.2014'
           WebLink = 'http://optitrex.ru'
         end
         object UcLbl_UpdateDate: TUcLabel
@@ -338,7 +344,7 @@ object Options: TOptions
           Width = 89
           Height = 13
           Caption = 'UcLbl_UpdateDate'
-          Version = '12.05.2012'
+          Version = '13.02.2014'
           WebLink = 'http://optitrex.ru'
         end
         object ChBox_AutoUpdate: TCheckBox
@@ -364,7 +370,6 @@ object Options: TOptions
           Caption = #1089#1073#1088#1086#1089
           CaptionEx.Strings = (
             #1089#1073#1088#1086#1089)
-          CaptionPositions.CaptionCenter = True
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -11
@@ -421,9 +426,7 @@ object Options: TOptions
           CaptionEx.Strings = (
             #1062#1074#1077#1090' '#1092#1086#1085#1072
             #1090#1077#1082#1091#1097#1077#1081' '#1075#1088#1091#1087#1087#1099)
-          CaptionPositions.Alignment = taCenter
           CaptionPositions.WordWrap = True
-          CaptionPositions.CaptionCenter = True
           ExplicitWidth = 144
         end
       end
@@ -441,9 +444,7 @@ object Options: TOptions
           Caption = #1062#1074#1077#1090' '#1075#1088#1091#1087#1087#1099
           CaptionEx.Strings = (
             #1062#1074#1077#1090' '#1075#1088#1091#1087#1087#1099)
-          CaptionPositions.Alignment = taCenter
           CaptionPositions.WordWrap = True
-          CaptionPositions.CaptionCenter = True
           ExplicitWidth = 323
         end
       end
@@ -462,9 +463,7 @@ object Options: TOptions
           Caption = #1062#1074#1077#1090' '#1101#1083#1077#1084#1077#1085#1090#1072
           CaptionEx.Strings = (
             #1062#1074#1077#1090' '#1101#1083#1077#1084#1077#1085#1090#1072)
-          CaptionPositions.Alignment = taCenter
           CaptionPositions.WordWrap = True
-          CaptionPositions.CaptionCenter = True
           ExplicitWidth = 323
         end
       end
@@ -484,9 +483,7 @@ object Options: TOptions
           CaptionEx.Strings = (
             #1062#1074#1077#1090
             #1090#1077#1082#1091#1097#1077#1075#1086' '#1101#1083#1077#1084#1077#1085#1090#1072)
-          CaptionPositions.Alignment = taCenter
           CaptionPositions.WordWrap = True
-          CaptionPositions.CaptionCenter = True
           ExplicitWidth = 139
         end
       end
@@ -504,9 +501,7 @@ object Options: TOptions
           Caption = #1062#1074#1077#1090' '#1090#1077#1082#1089#1090#1072' '#1075#1088#1091#1087#1087#1099
           CaptionEx.Strings = (
             #1062#1074#1077#1090' '#1090#1077#1082#1089#1090#1072' '#1075#1088#1091#1087#1087#1099)
-          CaptionPositions.Alignment = taCenter
           CaptionPositions.WordWrap = True
-          CaptionPositions.CaptionCenter = True
           ExplicitWidth = 144
         end
       end
@@ -524,9 +519,7 @@ object Options: TOptions
           Caption = #1062#1074#1077#1090' '#1088#1072#1084#1082#1080' '#1090#1077#1082#1091#1097#1077#1075#1086' '#1101#1083#1077#1084#1077#1085#1090#1072
           CaptionEx.Strings = (
             #1062#1074#1077#1090' '#1088#1072#1084#1082#1080' '#1090#1077#1082#1091#1097#1077#1075#1086' '#1101#1083#1077#1084#1077#1085#1090#1072)
-          CaptionPositions.Alignment = taCenter
           CaptionPositions.WordWrap = True
-          CaptionPositions.CaptionCenter = True
           ExplicitWidth = 144
         end
       end
@@ -546,9 +539,7 @@ object Options: TOptions
           CaptionEx.Strings = (
             #1062#1074#1077#1090' '#1090#1077#1082#1089#1090#1072' '#1085#1077
             #1085#1072#1081#1076#1077#1085#1085#1086#1081' '#1087#1088#1086#1075#1088#1072#1084#1084#1099)
-          CaptionPositions.Alignment = taCenter
           CaptionPositions.WordWrap = True
-          CaptionPositions.CaptionCenter = True
           ExplicitWidth = 144
         end
       end
@@ -567,9 +558,7 @@ object Options: TOptions
           Caption = #1062#1074#1077#1090' '#1090#1077#1082#1089#1090#1072' '#1087#1088#1086#1075#1088#1072#1084#1084#1099
           CaptionEx.Strings = (
             #1062#1074#1077#1090' '#1090#1077#1082#1089#1090#1072' '#1087#1088#1086#1075#1088#1072#1084#1084#1099)
-          CaptionPositions.Alignment = taCenter
           CaptionPositions.WordWrap = True
-          CaptionPositions.CaptionCenter = True
           ExplicitWidth = 144
         end
       end
@@ -623,9 +612,7 @@ object Options: TOptions
           CaptionEx.Strings = (
             #1062#1074#1077#1090' '#1090#1077#1082#1089#1090#1072
             #1090#1077#1082#1091#1097#1077#1075#1086' '#1101#1083#1077#1084#1077#1085#1090#1072)
-          CaptionPositions.Alignment = taCenter
           CaptionPositions.WordWrap = True
-          CaptionPositions.CaptionCenter = True
           ExplicitWidth = 323
         end
       end
