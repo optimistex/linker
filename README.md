@@ -6,8 +6,6 @@ Linker - запуск программ (альтернатива меню пус
 
 Текущая версия: **[Linker 2.3.1.17](https://github.com/optimistex/linker/releases/download/v2.3.1.17/Linker.exe)**
 
-Собранная версия для работы под Windows тут: **output/Linker.exe**
-
 # Основные возможности приложения
 
 *	Автоматическая установка новых версий с сайта.
