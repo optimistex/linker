@@ -11,35 +11,35 @@ uses
   fmApplicationList;
 
 const
-  // Сообщения
+  // РЎРѕРѕР±С‰РµРЅРёСЏ
   CM_RestoreFromTray = WM_USER + 1;
 
-  // Файлы
-  flXML_Linker     = 'Linker.xml';      // Параметры программы
-  flXML_Linker_Bak = 'Linker.xml.bak';  // Резервная копия параметров программы
-  flINI_Options    = 'Options.ini';     // Настройки программы
-  // Старые файлы (для совместимости)
-  flXML_Links      = 'Links.xml';       // Параметры программы (до переименования)
-  flXML_Links_Bak  = 'Links.xml.bak';   // Резервная копия параметров программы (до переименования)
-  flINI_Links      = 'Links.ini';       // Параметры программы (от версии 1.x.x.x)
+  // Р¤Р°Р№Р»С‹
+  flXML_Linker     = 'Linker.xml';      // РџР°СЂР°РјРµС‚СЂС‹ РїСЂРѕРіСЂР°РјРјС‹
+  flXML_Linker_Bak = 'Linker.xml.bak';  // Р РµР·РµСЂРІРЅР°СЏ РєРѕРїРёСЏ РїР°СЂР°РјРµС‚СЂРѕРІ РїСЂРѕРіСЂР°РјРјС‹
+  flINI_Options    = 'Options.ini';     // РќР°СЃС‚СЂРѕР№РєРё РїСЂРѕРіСЂР°РјРјС‹
+  // РЎС‚Р°СЂС‹Рµ С„Р°Р№Р»С‹ (РґР»СЏ СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚Рё)
+  flXML_Links      = 'Links.xml';       // РџР°СЂР°РјРµС‚СЂС‹ РїСЂРѕРіСЂР°РјРјС‹ (РґРѕ РїРµСЂРµРёРјРµРЅРѕРІР°РЅРёСЏ)
+  flXML_Links_Bak  = 'Links.xml.bak';   // Р РµР·РµСЂРІРЅР°СЏ РєРѕРїРёСЏ РїР°СЂР°РјРµС‚СЂРѕРІ РїСЂРѕРіСЂР°РјРјС‹ (РґРѕ РїРµСЂРµРёРјРµРЅРѕРІР°РЅРёСЏ)
+  flINI_Links      = 'Links.ini';       // РџР°СЂР°РјРµС‚СЂС‹ РїСЂРѕРіСЂР°РјРјС‹ (РѕС‚ РІРµСЂСЃРёРё 1.x.x.x)
 
-  // Версии XML файла. От версии зависит структура и способ загрузки данных
-  verXML_11  = '1.1'; // Последняя версия XML параметров программы
+  // Р’РµСЂСЃРёРё XML С„Р°Р№Р»Р°. РћС‚ РІРµСЂСЃРёРё Р·Р°РІРёСЃРёС‚ СЃС‚СЂСѓРєС‚СѓСЂР° Рё СЃРїРѕСЃРѕР± Р·Р°РіСЂСѓР·РєРё РґР°РЅРЅС‹С…
+  verXML_11  = '1.1'; // РџРѕСЃР»РµРґРЅСЏСЏ РІРµСЂСЃРёСЏ XML РїР°СЂР°РјРµС‚СЂРѕРІ РїСЂРѕРіСЂР°РјРјС‹
   verXML_10  = '1.0';
 
-  // Зарезервированные имена XML узлов
-  ndRoot    = 'linker';   // Корневой узел
+  // Р—Р°СЂРµР·РµСЂРІРёСЂРѕРІР°РЅРЅС‹Рµ РёРјРµРЅР° XML СѓР·Р»РѕРІ
+  ndRoot    = 'linker';   // РљРѕСЂРЅРµРІРѕР№ СѓР·РµР»
 
-  ndOptions = 'options';  // Узел с настройками программы
-  ndOption  = 'option';   // Узел с опцией программы
-  ndScreen  = 'screen';   // Узел описания позиции на экране
+  ndOptions = 'options';  // РЈР·РµР» СЃ РЅР°СЃС‚СЂРѕР№РєР°РјРё РїСЂРѕРіСЂР°РјРјС‹
+  ndOption  = 'option';   // РЈР·РµР» СЃ РѕРїС†РёРµР№ РїСЂРѕРіСЂР°РјРјС‹
+  ndScreen  = 'screen';   // РЈР·РµР» РѕРїРёСЃР°РЅРёСЏ РїРѕР·РёС†РёРё РЅР° СЌРєСЂР°РЅРµ
 
-  ndAppList = 'applist';  // Список программ
-  ndAppItem = 'el';     // Элемент списка программ
-  // Зарезервированные имена УСТАРЕВШИХ XML узлов
-  ndRoot_v0     = 'Root';  // Корневой узел (для версии verXML_0)
-  ndItem_v0     = 'Node';  // Элемент списка программ (для версии verXML_0)
-  ndAppItem_v10 = 'item';     // Элемент списка программ
+  ndAppList = 'applist';  // РЎРїРёСЃРѕРє РїСЂРѕРіСЂР°РјРј
+  ndAppItem = 'el';     // Р­Р»РµРјРµРЅС‚ СЃРїРёСЃРєР° РїСЂРѕРіСЂР°РјРј
+  // Р—Р°СЂРµР·РµСЂРІРёСЂРѕРІР°РЅРЅС‹Рµ РёРјРµРЅР° РЈРЎРўРђР Р•Р’РЁРРҐ XML СѓР·Р»РѕРІ
+  ndRoot_v0     = 'Root';  // РљРѕСЂРЅРµРІРѕР№ СѓР·РµР» (РґР»СЏ РІРµСЂСЃРёРё verXML_0)
+  ndItem_v0     = 'Node';  // Р­Р»РµРјРµРЅС‚ СЃРїРёСЃРєР° РїСЂРѕРіСЂР°РјРј (РґР»СЏ РІРµСЂСЃРёРё verXML_0)
+  ndAppItem_v10 = 'item';     // Р­Р»РµРјРµРЅС‚ СЃРїРёСЃРєР° РїСЂРѕРіСЂР°РјРј
 
 type
   TItemType = (itLink, itGroup, itDivider);
@@ -177,11 +177,11 @@ type
     fNeedSave: Boolean;
     fReadOnlyFS: Boolean;
 
-    GHK_ShowApp: TUcGlobalHotkey; // Глобальная горячая клавиша
+    GHK_ShowApp: TUcGlobalHotkey; // Р“Р»РѕР±Р°Р»СЊРЅР°СЏ РіРѕСЂСЏС‡Р°СЏ РєР»Р°РІРёС€Р°
 
     IsFiltered: Boolean;
     Accessed: Boolean;
-    DOM: IXMLDocument; // XML с параметрами программы
+    DOM: IXMLDocument; // XML СЃ РїР°СЂР°РјРµС‚СЂР°РјРё РїСЂРѕРіСЂР°РјРјС‹
     fXML_Corrupted: Boolean; //
     procedure UpdateActionControls;
     procedure ShowOptions(iShowHelp: Boolean);
@@ -213,13 +213,13 @@ type
     procedure ShowNodesWithCorruptedLinks;
   public
     fCanClose: Boolean;
-    // Загрузка данных
-      // Загрузка списка программ из ini-файла (оставлено для совместимости со старыми версиями)
+    // Р—Р°РіСЂСѓР·РєР° РґР°РЅРЅС‹С…
+      // Р—Р°РіСЂСѓР·РєР° СЃРїРёСЃРєР° РїСЂРѕРіСЂР°РјРј РёР· ini-С„Р°Р№Р»Р° (РѕСЃС‚Р°РІР»РµРЅРѕ РґР»СЏ СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚Рё СЃРѕ СЃС‚Р°СЂС‹РјРё РІРµСЂСЃРёСЏРјРё)
     procedure LoadListFromIniFile;
-      // Загрузка настроек программы из ini-файла (оставлено для совместимости со старыми версиями)
+      // Р—Р°РіСЂСѓР·РєР° РЅР°СЃС‚СЂРѕРµРє РїСЂРѕРіСЂР°РјРјС‹ РёР· ini-С„Р°Р№Р»Р° (РѕСЃС‚Р°РІР»РµРЅРѕ РґР»СЏ СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚Рё СЃРѕ СЃС‚Р°СЂС‹РјРё РІРµСЂСЃРёСЏРјРё)
     procedure LoadOptionsFromIniFile;
-    function  LoadXML(FileName: string): Boolean;  // Загрузка из xml-файла
-    // Сохранение данных
+    function  LoadXML(FileName: string): Boolean;  // Р—Р°РіСЂСѓР·РєР° РёР· xml-С„Р°Р№Р»Р°
+    // РЎРѕС…СЂР°РЅРµРЅРёРµ РґР°РЅРЅС‹С…
     function SaveXML(Forcibly: Boolean = False): Boolean;
     //**
     procedure MinimizeToTray;
@@ -227,21 +227,21 @@ type
   end;
 
   TTreeData = record
-    rPath: string;        // Путь к файлу запуска программы
-    rName: string;        // Имя программы
-    rIcon: string;        // Путь к иконке для программы
-    rIconIndex: Integer;  // Номер иконки
-    rParameters: string;  // Параметры запуска
-    rShowCmd: Integer;    // Состояние окна программы при зауске
-    rNote: string;        // Текст примечания к программе
-    rRunAsAdmin: Boolean; // Флаг запуска от имени администратора
-    rType: TItemType;     // Тип элемента
-    rNumberOfStarts: Integer; // (статистика) Количество запусков программы
+    rPath: string;        // РџСѓС‚СЊ Рє С„Р°Р№Р»Сѓ Р·Р°РїСѓСЃРєР° РїСЂРѕРіСЂР°РјРјС‹
+    rName: string;        // РРјСЏ РїСЂРѕРіСЂР°РјРјС‹
+    rIcon: string;        // РџСѓС‚СЊ Рє РёРєРѕРЅРєРµ РґР»СЏ РїСЂРѕРіСЂР°РјРјС‹
+    rIconIndex: Integer;  // РќРѕРјРµСЂ РёРєРѕРЅРєРё
+    rParameters: string;  // РџР°СЂР°РјРµС‚СЂС‹ Р·Р°РїСѓСЃРєР°
+    rShowCmd: Integer;    // РЎРѕСЃС‚РѕСЏРЅРёРµ РѕРєРЅР° РїСЂРѕРіСЂР°РјРјС‹ РїСЂРё Р·Р°СѓСЃРєРµ
+    rNote: string;        // РўРµРєСЃС‚ РїСЂРёРјРµС‡Р°РЅРёСЏ Рє РїСЂРѕРіСЂР°РјРјРµ
+    rRunAsAdmin: Boolean; // Р¤Р»Р°Рі Р·Р°РїСѓСЃРєР° РѕС‚ РёРјРµРЅРё Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°
+    rType: TItemType;     // РўРёРї СЌР»РµРјРµРЅС‚Р°
+    rNumberOfStarts: Integer; // (СЃС‚Р°С‚РёСЃС‚РёРєР°) РљРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РїСѓСЃРєРѕРІ РїСЂРѕРіСЂР°РјРјС‹
     //--
-    rNeedIcon: Boolean;   // Флаг определяющий, что нужно обновить иконку
-    rImageIndex: Integer; // Индекс иконки в ImageList для отображения в дереве
-    rFileExists: Boolean; // Признак существования файла на диске
-    rHidden: Boolean;     // Признак определяющий скрытие элемента (например фильтром)
+    rNeedIcon: Boolean;   // Р¤Р»Р°Рі РѕРїСЂРµРґРµР»СЏСЋС‰РёР№, С‡С‚Рѕ РЅСѓР¶РЅРѕ РѕР±РЅРѕРІРёС‚СЊ РёРєРѕРЅРєСѓ
+    rImageIndex: Integer; // РРЅРґРµРєСЃ РёРєРѕРЅРєРё РІ ImageList РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РІ РґРµСЂРµРІРµ
+    rFileExists: Boolean; // РџСЂРёР·РЅР°Рє СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ С„Р°Р№Р»Р° РЅР° РґРёСЃРєРµ
+    rHidden: Boolean;     // РџСЂРёР·РЅР°Рє РѕРїСЂРµРґРµР»СЏСЋС‰РёР№ СЃРєСЂС‹С‚РёРµ СЌР»РµРјРµРЅС‚Р° (РЅР°РїСЂРёРјРµСЂ С„РёР»СЊС‚СЂРѕРј)
   end;
   PTreeData = ^TTreeData;
 
@@ -314,21 +314,21 @@ begin
 
   Td := VST.GetNodeData(Nd);
 
-  Td.rPath           := FocusedTd.rPath;           // Путь к файлу запуска программы
-  Td.rName           := 'Копия ' + FocusedTd.rName; // Имя программы
-  Td.rIcon           := FocusedTd.rIcon;           // Путь к иконке для программы
-  Td.rIconIndex      := FocusedTd.rIconIndex;      // Номер иконки
-  Td.rParameters     := FocusedTd.rParameters;     // Параметры запуска
-  Td.rShowCmd        := FocusedTd.rShowCmd;        // Состояние окна программы при зауске
-  Td.rNote           := FocusedTd.rNote;           // Текст примечания к программе
-  Td.rRunAsAdmin     := FocusedTd.rRunAsAdmin;     // Флаг запуска от имени администратора
-  Td.rType           := FocusedTd.rType;           // Тип элемента
-  Td.rNumberOfStarts := FocusedTd.rNumberOfStarts; // (статистика) Количество запусков программы
+  Td.rPath           := FocusedTd.rPath;           // РџСѓС‚СЊ Рє С„Р°Р№Р»Сѓ Р·Р°РїСѓСЃРєР° РїСЂРѕРіСЂР°РјРјС‹
+  Td.rName           := 'РљРѕРїРёСЏ ' + FocusedTd.rName; // РРјСЏ РїСЂРѕРіСЂР°РјРјС‹
+  Td.rIcon           := FocusedTd.rIcon;           // РџСѓС‚СЊ Рє РёРєРѕРЅРєРµ РґР»СЏ РїСЂРѕРіСЂР°РјРјС‹
+  Td.rIconIndex      := FocusedTd.rIconIndex;      // РќРѕРјРµСЂ РёРєРѕРЅРєРё
+  Td.rParameters     := FocusedTd.rParameters;     // РџР°СЂР°РјРµС‚СЂС‹ Р·Р°РїСѓСЃРєР°
+  Td.rShowCmd        := FocusedTd.rShowCmd;        // РЎРѕСЃС‚РѕСЏРЅРёРµ РѕРєРЅР° РїСЂРѕРіСЂР°РјРјС‹ РїСЂРё Р·Р°СѓСЃРєРµ
+  Td.rNote           := FocusedTd.rNote;           // РўРµРєСЃС‚ РїСЂРёРјРµС‡Р°РЅРёСЏ Рє РїСЂРѕРіСЂР°РјРјРµ
+  Td.rRunAsAdmin     := FocusedTd.rRunAsAdmin;     // Р¤Р»Р°Рі Р·Р°РїСѓСЃРєР° РѕС‚ РёРјРµРЅРё Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°
+  Td.rType           := FocusedTd.rType;           // РўРёРї СЌР»РµРјРµРЅС‚Р°
+  Td.rNumberOfStarts := FocusedTd.rNumberOfStarts; // (СЃС‚Р°С‚РёСЃС‚РёРєР°) РљРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РїСѓСЃРєРѕРІ РїСЂРѕРіСЂР°РјРјС‹
   //--
-  Td.rNeedIcon       := FocusedTd.rNeedIcon;       // Флаг определяющий, что нужно обновить иконку
-  Td.rImageIndex     := FocusedTd.rImageIndex;     // Индекс иконки в ImageList для отображения в дереве
-  Td.rFileExists     := FocusedTd.rFileExists;     // Признак существования файла на диске
-  Td.rHidden         := FocusedTd.rHidden;         // Признак определяющий скрытие элемента (например фильтром)
+  Td.rNeedIcon       := FocusedTd.rNeedIcon;       // Р¤Р»Р°Рі РѕРїСЂРµРґРµР»СЏСЋС‰РёР№, С‡С‚Рѕ РЅСѓР¶РЅРѕ РѕР±РЅРѕРІРёС‚СЊ РёРєРѕРЅРєСѓ
+  Td.rImageIndex     := FocusedTd.rImageIndex;     // РРЅРґРµРєСЃ РёРєРѕРЅРєРё РІ ImageList РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РІ РґРµСЂРµРІРµ
+  Td.rFileExists     := FocusedTd.rFileExists;     // РџСЂРёР·РЅР°Рє СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ С„Р°Р№Р»Р° РЅР° РґРёСЃРєРµ
+  Td.rHidden         := FocusedTd.rHidden;         // РџСЂРёР·РЅР°Рє РѕРїСЂРµРґРµР»СЏСЋС‰РёР№ СЃРєСЂС‹С‚РёРµ СЌР»РµРјРµРЅС‚Р° (РЅР°РїСЂРёРјРµСЂ С„РёР»СЊС‚СЂРѕРј)
 
 end;
 
@@ -345,9 +345,9 @@ begin
   if Assigned(VST.GetFirstSelected()) then
   begin
     if VST.SelectedCount > 1 then
-      s := 'Удалить записи?'
+      s := 'РЈРґР°Р»РёС‚СЊ Р·Р°РїРёСЃРё?'
       else
-      s := 'Удалить запись?';
+      s := 'РЈРґР°Р»РёС‚СЊ Р·Р°РїРёСЃСЊ?';
 
     if  MessageDlg(s, mtWarning, [mbYes, mbCancel], 0) = mrYes then
     begin
@@ -452,7 +452,7 @@ begin
     if Td^.rType = itLink then
       ShowMyHint(Self, Trim(Td^.rPath + ' ' +
                             Td^.rParameters + #13#10 +
-                            'Количество запусков: ' + IntToStr(Td^.rNumberOfStarts) + #13#10#13#10 +
+                            'РљРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РїСѓСЃРєРѕРІ: ' + IntToStr(Td^.rNumberOfStarts) + #13#10#13#10 +
                             Td^.rNote), 300, 500)
       else
       ShowMyHint(Self, Trim(Td^.rNote), 300, 500);
@@ -477,9 +477,9 @@ end;
 procedure TfMainLinker.actSaveTreeExecute(Sender: TObject);
 begin
   if SaveXML then
-    MessageDlg('Список программ успешно сохранен!', mtInformation, [mbOK], 0)
+    MessageDlg('РЎРїРёСЃРѕРє РїСЂРѕРіСЂР°РјРј СѓСЃРїРµС€РЅРѕ СЃРѕС…СЂР°РЅРµРЅ!', mtInformation, [mbOK], 0)
     else
-    MessageDlg('Не удалось сохранить список программ!', mtError, [mbOK], 0);
+    MessageDlg('РќРµ СѓРґР°Р»РѕСЃСЊ СЃРѕС…СЂР°РЅРёС‚СЊ СЃРїРёСЃРѕРє РїСЂРѕРіСЂР°РјРј!', mtError, [mbOK], 0);
 end;
 
 procedure TfMainLinker.ActShowCorruptedLinksExecute(Sender: TObject);
@@ -531,20 +531,20 @@ procedure TfMainLinker.DoStartUpActions(Sender: TObject; var Done: Boolean);
 var Ver: string;
 begin
   Application.OnIdle := nil;
-  // Обработка опций программы
+  // РћР±СЂР°Р±РѕС‚РєР° РѕРїС†РёР№ РїСЂРѕРіСЂР°РјРјС‹
   if DM.Options['StartMinimized'].AsBoolean then
     MinimizeToTray;
 
-  // Проверка обновлений
+  // РџСЂРѕРІРµСЂРєР° РѕР±РЅРѕРІР»РµРЅРёР№
   if DM.Options['AutoUpdate_Enabled'].AsBoolean and
      (DM.Options['AutoUpdate_date'].AsDateTime <= Now) then
   begin
     if NewUpdateExists(Ver) then
     begin
       if ShowQueryUserForPendingActions(
-            'AutoUpdate_date', 'Автообновление',
-            'Доступна новая версия программы Linker v' + Ver + '.'#13#10 +
-            'Установить эту версию сейчас?') then
+            'AutoUpdate_date', 'РђРІС‚РѕРѕР±РЅРѕРІР»РµРЅРёРµ',
+            'Р”РѕСЃС‚СѓРїРЅР° РЅРѕРІР°СЏ РІРµСЂСЃРёСЏ РїСЂРѕРіСЂР°РјРјС‹ Linker v' + Ver + '.'#13#10 +
+            'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ СЌС‚Сѓ РІРµСЂСЃРёСЋ СЃРµР№С‡Р°СЃ?') then
         SelfUpdate(True);
     end else
       DM.Options['AutoUpdate_date'].AsDateTime := Now + 1;
@@ -552,8 +552,8 @@ begin
 
 //  if DM.Options['AutoUpdate_Enabled'].AsBoolean and NewUpdateExists(Ver) then
 //  begin
-//    if MessageDlg('Доступна новая версия программы Linker v' + Ver + '.'#13#10 +
-//                  'Установить эту версию сейчас?',
+//    if MessageDlg('Р”РѕСЃС‚СѓРїРЅР° РЅРѕРІР°СЏ РІРµСЂСЃРёСЏ РїСЂРѕРіСЂР°РјРјС‹ Linker v' + Ver + '.'#13#10 +
+//                  'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ СЌС‚Сѓ РІРµСЂСЃРёСЋ СЃРµР№С‡Р°СЃ?',
 //                  mtConfirmation, [mbYes, mbCancel], 0) = mrYes then
 //      actCheckUpdate.Execute;
 //  end;
@@ -573,7 +573,7 @@ function TfMainLinker.AddItem(ItemTtype: TItemType; FileName: string = '';
     try
       if sc.Load(PChar(FileName)) then
       begin
-        // Получаем путь к файлу/папке
+        // РџРѕР»СѓС‡Р°РµРј РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ/РїР°РїРєРµ
         if sc.GetPath(Buffer) then
         begin
           s := UC_ExpandFileName(Buffer);
@@ -582,17 +582,17 @@ function TfMainLinker.AddItem(ItemTtype: TItemType; FileName: string = '';
                                      ExtractFileExt(FileName), '',
                                      [rfReplaceAll, rfIgnoreCase]);
         end;
-        // Получаем параметры иконки
+        // РџРѕР»СѓС‡Р°РµРј РїР°СЂР°РјРµС‚СЂС‹ РёРєРѕРЅРєРё
         if sc.GetIconLocation(Buffer, IconIndex) then
         begin
           Td^.rIcon := Buffer;
           Td^.rIconIndex := IconIndex;
         end;
-        // Получаем описание ярлыка
+        // РџРѕР»СѓС‡Р°РµРј РѕРїРёСЃР°РЅРёРµ СЏСЂР»С‹РєР°
         if sc.GetDescription(Buffer)       then Td^.rNote       := Buffer;
-        // Получаем параметры запуска
+        // РџРѕР»СѓС‡Р°РµРј РїР°СЂР°РјРµС‚СЂС‹ Р·Р°РїСѓСЃРєР°
         if not sc.GetShowCmd(Td^.rShowCmd) then Td^.rShowCmd    := 0;
-        // Получаем параметры командной строки
+        // РџРѕР»СѓС‡Р°РµРј РїР°СЂР°РјРµС‚СЂС‹ РєРѕРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРё
         if sc.GetArguments(Buffer)         then Td^.rParameters := Buffer;
       end;
     finally
@@ -603,7 +603,7 @@ function TfMainLinker.AddItem(ItemTtype: TItemType; FileName: string = '';
 var Nd, FocusedNd: PVirtualNode;
     Td: PTreeData;
 begin
-  // Подготовка
+  // РџРѕРґРіРѕС‚РѕРІРєР°
   if Assigned(Target) then
     FocusedNd := Target
     else
@@ -628,13 +628,13 @@ begin
 
   case Td^.rType of
     itLink    : begin
-        // Определяем ярлык и обрабатываем его
+        // РћРїСЂРµРґРµР»СЏРµРј СЏСЂР»С‹Рє Рё РѕР±СЂР°Р±Р°С‚С‹РІР°РµРј РµРіРѕ
         if CompareText(ExtractFileExt(FileName), '.lnk') = 0 then
           LoadDataFromShellLink(Td, FileName)
           else
           Td^.rPath := FileName;
 
-        // Редактирование добавленного элемента
+        // Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ РґРѕР±Р°РІР»РµРЅРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р°
         Result := TfEditLink.Create(Self, VST, Nd, okAdd).ShowModal = mrOk;
         if Result then
         begin
@@ -646,7 +646,7 @@ begin
       end;
 
     itGroup   : begin
-        // Добавление группы
+        // Р”РѕР±Р°РІР»РµРЅРёРµ РіСЂСѓРїРїС‹
         Result := TfEditGroup.Create(Self, VST, Nd, okAdd).ShowModal = mrOk;
         if Result then
         begin
@@ -666,7 +666,7 @@ begin
 end;
 
 procedure TfMainLinker.FilterTree(SearchText: string = '');
-const Ru = 'ЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ.';
+const Ru = 'РЃР™Р¦РЈРљР•РќР“РЁР©Р—РҐРЄР¤Р«Р’РђРџР РћР›Р”Р–Р­РЇР§РЎРњРРўР¬Р‘Р®.';
       En = '`QWERTYUIOP[]ASDFGHJKL;'#39'ZXCVBNM,./';
 
   procedure ReplaceChars(var Str: string; StrCrs, StrDest: string);
@@ -685,7 +685,7 @@ var
   Node: PVirtualNode;
   Td: PTreeData;
   SelectedNode: PVirtualNode;
-  SearchAlt: string;
+  SearchAltRu, SearchAltEn: string;
 begin
   if SearchText = '' then
   begin
@@ -701,28 +701,31 @@ begin
     VST.FocusedNode := nil;
 
     SearchText := AnsiUpperCase(SearchText);
-    SearchAlt  := AnsiUpperCase(SearchText);
-    ReplaceChars(SearchAlt, Ru, En);
-    // Первый проход для фильтрации нодов, кроме групп
+    SearchAltEn  := AnsiUpperCase(SearchText);
+    SearchAltRu  := AnsiUpperCase(SearchText);
+    ReplaceChars(SearchAltEn, Ru, En);
+    ReplaceChars(SearchAltRu, En, Ru);
+    // РџРµСЂРІС‹Р№ РїСЂРѕС…РѕРґ РґР»СЏ С„РёР»СЊС‚СЂР°С†РёРё РЅРѕРґРѕРІ, РєСЂРѕРјРµ РіСЂСѓРїРї
     Node := VST.GetLast;
     while Assigned(Node) do
     begin
       Td := VST.GetNodeData(Node);
 
-      if SearchText = '' then // Показываем все дерево
+      if SearchText = '' then // РџРѕРєР°Р·С‹РІР°РµРј РІСЃРµ РґРµСЂРµРІРѕ
       begin
         VST.IsVisible[Node] := True;
         VST.VisiblePath[Node] := True;
         IsFiltered := False;
         UpdateNode(VST, Node);
       end else
-      if Assigned(Td) then  // Группы не скрываем
+      if Assigned(Td) then  // Р“СЂСѓРїРїС‹ РЅРµ СЃРєСЂС‹РІР°РµРј
       begin
         if Td^.rType = itGroup then
           VST.IsVisible[Node] := Assigned(VST.GetFirstVisibleChild(Node))
         else if (Td^.rType = itLink) and
                 ((Pos(SearchText, AnsiUpperCase(Td^.rName)) > 0) or
-                (Pos(SearchAlt,  AnsiUpperCase(Td^.rName)) > 0)) then
+                (Pos(SearchAltRu,  AnsiUpperCase(Td^.rName)) > 0) or
+                (Pos(SearchAltEn,  AnsiUpperCase(Td^.rName)) > 0)) then
         begin
           UpdateNode(VST, Node);
           if VST.IsVisible[Node] then
@@ -834,7 +837,7 @@ type
 procedure TfMainLinker.FormCreate(Sender: TObject);
 begin
   UC_SetupSystemCursors;
-  // Инициализация глобальных переменных
+  // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РіР»РѕР±Р°Р»СЊРЅС‹С… РїРµСЂРµРјРµРЅРЅС‹С…
   Accessed := False;
   GHK_ShowApp := TUcGlobalHotkey.Create;
   GHK_ShowApp.Handle := Handle;
@@ -845,7 +848,7 @@ begin
   fXML_Corrupted := False;
   IsFiltered  := False;
   FilterValue := '';
-  // Инициализация RPC-клиента
+  // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ RPC-РєР»РёРµРЅС‚Р°
   PublicKey := 'linker_secure_pass';
   xrc.URL   := 'optitrex.ru/rpc/index.php';
 
@@ -854,15 +857,15 @@ begin
 //  xrc.HttpCli.ProxyUsername := '123';
 //  xrc.HttpCli.ProxyPassword := '123';
 
-  // Инициализация проверки обновлений
+  // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РїСЂРѕРІРµСЂРєРё РѕР±РЅРѕРІР»РµРЅРёР№
   Application.OnIdle := DoStartUpActions;
-  // Обработки загрузки окна
+  // РћР±СЂР°Р±РѕС‚РєРё Р·Р°РіСЂСѓР·РєРё РѕРєРЅР°
   VST.NodeDataSize := SizeOf(TTreeData);
 
   UpdateCaption;
 
   DM.Options.RegisterNotify(DoOptionsChanged);
-  // ПредУстановка опций
+  // РџСЂРµРґРЈСЃС‚Р°РЅРѕРІРєР° РѕРїС†РёР№
   with DM do
   begin
     Options['StartMinimized'].AsBoolean               := False;
@@ -896,7 +899,7 @@ begin
   end;
   //**
 
-  // Проверка возможности записи файлов настроек
+  // РџСЂРѕРІРµСЂРєР° РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё Р·Р°РїРёСЃРё С„Р°Р№Р»РѕРІ РЅР°СЃС‚СЂРѕРµРє
   try
     if FileExists(flXML_Linker) then
       TFileStream.Create(flXML_Linker, fmOpenReadWrite).Free
@@ -905,18 +908,18 @@ begin
   except
     SetReadOnlyFS(True, False);
   end;
-  // Загрузка данных
+  // Р—Р°РіСЂСѓР·РєР° РґР°РЅРЅС‹С…
   DOM := CreateXMLDocument;
-    // Обычная загрузка
+    // РћР±С‹С‡РЅР°СЏ Р·Р°РіСЂСѓР·РєР°
   if not LoadXML(flXML_Linker) then
-      // Загрузка из резервной копии
+      // Р—Р°РіСЂСѓР·РєР° РёР· СЂРµР·РµСЂРІРЅРѕР№ РєРѕРїРёРё
     if LoadXML(flXML_Linker_Bak) then
     begin
       fXML_Corrupted := True;
-      MessageDlg('Параметры программы "Linker" загружены из резервной копии:'#13#10 +
+      MessageDlg('РџР°СЂР°РјРµС‚СЂС‹ РїСЂРѕРіСЂР°РјРјС‹ "Linker" Р·Р°РіСЂСѓР¶РµРЅС‹ РёР· СЂРµР·РµСЂРІРЅРѕР№ РєРѕРїРёРё:'#13#10 +
                  '"' + flXML_Linker_Bak + '"', mtInformation, [mbOK], 0);
     end else
-        // Загрузка из старой версии XML или ее резервной копии
+        // Р—Р°РіСЂСѓР·РєР° РёР· СЃС‚Р°СЂРѕР№ РІРµСЂСЃРёРё XML РёР»Рё РµРµ СЂРµР·РµСЂРІРЅРѕР№ РєРѕРїРёРё
       if LoadXML(flXML_Links) or LoadXML(flXML_Links_Bak) then
       begin
         if SaveXML(True) then
@@ -925,10 +928,10 @@ begin
           DeleteFile(flXML_Links_Bak);
         end;
       end else
-          // Загрузка из старой версии INI
+          // Р—Р°РіСЂСѓР·РєР° РёР· СЃС‚Р°СЂРѕР№ РІРµСЂСЃРёРё INI
         if FileExists(flINI_Links) then
-          LoadListFromIniFile; // для совместимости с 1-й версией
-  // Действия после загрузки данных и настроек
+          LoadListFromIniFile; // РґР»СЏ СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚Рё СЃ 1-Р№ РІРµСЂСЃРёРµР№
+  // Р”РµР№СЃС‚РІРёСЏ РїРѕСЃР»Рµ Р·Р°РіСЂСѓР·РєРё РґР°РЅРЅС‹С… Рё РЅР°СЃС‚СЂРѕРµРє
 //  DM.RestoreRootPath;
 //  if (not DirectoryExists(DM.Options['AppsPath'].AsString)) and
 //     (not DirectoryExists(UC_ExpandFileName(DM.Options['AppsPath'].AsString))) then
@@ -946,11 +949,11 @@ end;
 
 procedure TfMainLinker.FormDestroy(Sender: TObject);
 begin
-  // Сохранение данных
+  // РЎРѕС…СЂР°РЅРµРЅРёРµ РґР°РЅРЅС‹С…
   SaveXML;
   GHK_ShowApp.UnRegisterHotkey;
 
-  // Очистка памяти
+  // РћС‡РёСЃС‚РєР° РїР°РјСЏС‚Рё
   GHK_ShowApp.Free;
   DM.Options.UnregisterNotify(DoOptionsChanged);
   StopExtractIcons;
@@ -1007,7 +1010,7 @@ begin
   ini := TMemIniFile.Create(flINI_Options);
   with ini do
   try
-    // ПредУстановка опций (если они отсутствуют в ini-файле)
+    // РџСЂРµРґРЈСЃС‚Р°РЅРѕРІРєР° РѕРїС†РёР№ (РµСЃР»Рё РѕРЅРё РѕС‚СЃСѓС‚СЃС‚РІСѓСЋС‚ РІ ini-С„Р°Р№Р»Рµ)
     DM.Options['StartMinimized'].AsBoolean            := False;
     DM.Options['GlobalHotKey_ShowApp'].AsString       := 'Alt+F1';
     DM.Options['AlphaBlend'].AsBoolean                := False;
@@ -1020,11 +1023,11 @@ begin
     DM.Options['AppList_ColorCurrentItem'].AsInteger  := $00A8CAAA;
     DM.Options['AppsPath'].AsString                   := 'Apps';
 
-    // Загрузка настроек
+    // Р—Р°РіСЂСѓР·РєР° РЅР°СЃС‚СЂРѕРµРє
     DM.Options['AutoMinimize'].AsBoolean := ReadBool('General', 'AutoMinimize', false);
     DM.Options['AutoClose'].AsBoolean := (not DM.Options['AutoMinimize'].AsBoolean) and
                                           ReadBool('General', 'AutoClose', false);
-    // Прозрачность окна (Оставлено для совместимости со старой версией настроек)
+    // РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ РѕРєРЅР° (РћСЃС‚Р°РІР»РµРЅРѕ РґР»СЏ СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚Рё СЃРѕ СЃС‚Р°СЂРѕР№ РІРµСЂСЃРёРµР№ РЅР°СЃС‚СЂРѕРµРє)
     if ini.ValueExists('General', 'AlphaBlend') then
       DM.Options['AlphaBlend'].AsBoolean :=
         ReadBool('General', 'AlphaBlend', false);
@@ -1032,11 +1035,11 @@ begin
     if ini.ValueExists('General', 'AlphaBlendValue') then
       DM.Options['AlphaBlendValue'].AsInteger :=
         ReadInteger('General', 'AlphaBlendValue', 255);
-    // Загрузка параметра (Оставлено для совместимости со старой версией настроек)
+    // Р—Р°РіСЂСѓР·РєР° РїР°СЂР°РјРµС‚СЂР° (РћСЃС‚Р°РІР»РµРЅРѕ РґР»СЏ СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚Рё СЃРѕ СЃС‚Р°СЂРѕР№ РІРµСЂСЃРёРµР№ РЅР°СЃС‚СЂРѕРµРє)
     if ini.ValueExists('General', 'GlobalHotKey') then
       DM.Options['GlobalHotKey_ShowApp'].AsString :=
         ReadString('General', 'GlobalHotKey', '');
-    // Размер/позиция окна
+    // Р Р°Р·РјРµСЂ/РїРѕР·РёС†РёСЏ РѕРєРЅР°
     FormSection := GetIniFormSection;
     Left  := ReadInteger(FormSection, 'Left',   300);
     Top   := ReadInteger(FormSection, 'Top',    300);
@@ -1047,7 +1050,7 @@ begin
     if Left + Width < 20           then Left := 0;
     if Top > Screen.WorkAreaHeight then Top := Screen.WorkAreaHeight - Height;
     if Top + Height < 20           then Top := 0;
-    // !!!!! Загрузка опций программы !!!!! (отработка настроек тут: DoOptionsChanged)
+    // !!!!! Р—Р°РіСЂСѓР·РєР° РѕРїС†РёР№ РїСЂРѕРіСЂР°РјРјС‹ !!!!! (РѕС‚СЂР°Р±РѕС‚РєР° РЅР°СЃС‚СЂРѕРµРє С‚СѓС‚: DoOptionsChanged)
     OpNames := TStringList.Create;
     try
       ini.ReadSection('options', OpNames);
@@ -1145,40 +1148,40 @@ function TfMainLinker.LoadXML(FileName: string): Boolean;
       MonResolution: string;
       k: Extended;
   begin
-    // !!!!! Загрузка опций программы !!!!! (отработка настроек тут: DoOptionsChanged)
+    // !!!!! Р—Р°РіСЂСѓР·РєР° РѕРїС†РёР№ РїСЂРѕРіСЂР°РјРјС‹ !!!!! (РѕС‚СЂР°Р±РѕС‚РєР° РЅР°СЃС‚СЂРѕРµРє С‚СѓС‚: DoOptionsChanged)
     MonResolution := GetMonResolution;
     for i := 0 to xmlNodeList.Count - 1 do
     begin
-        // Загрузка опций
+        // Р—Р°РіСЂСѓР·РєР° РѕРїС†РёР№
       if xmlNodeList[i].NodeName = ndOption then
         DM.Options[NdStrV(xmlNodeList[i], 'name')].AsString := NdStrV(xmlNodeList[i], 'value')
-        // Загрузка позиции и размеров окна
+        // Р—Р°РіСЂСѓР·РєР° РїРѕР·РёС†РёРё Рё СЂР°Р·РјРµСЂРѕРІ РѕРєРЅР°
       else if (xmlNodeList[i].NodeName = ndScreen) then
       begin
-        // Чтение настроек
+        // Р§С‚РµРЅРёРµ РЅР°СЃС‚СЂРѕРµРє
         scr_width  := StrToIntDef(NdStrV(xmlNodeList[i], 'scr_width'), Screen.WorkAreaWidth);
         scr_height := StrToIntDef(NdStrV(xmlNodeList[i], 'scr_height'), Screen.WorkAreaHeight);
         win_left   := StrToIntDef(NdStrV(xmlNodeList[i], 'Left'),   300);
         win_top    := StrToIntDef(NdStrV(xmlNodeList[i], 'Top'),    300);
         win_width  := StrToIntDef(NdStrV(xmlNodeList[i], 'Width'),  350);
         win_height := StrToIntDef(NdStrV(xmlNodeList[i], 'Height'), 380);
-        // Рассчет/применение новых параметров
+        // Р Р°СЃСЃС‡РµС‚/РїСЂРёРјРµРЅРµРЅРёРµ РЅРѕРІС‹С… РїР°СЂР°РјРµС‚СЂРѕРІ
         Width  := win_width;
         Height := win_height;
 
         k := Screen.WorkAreaWidth / scr_width;
-        if win_left >= ((scr_width - win_width) / 2) - 1 then // -1 - делаем приоритет на правый край
+        if win_left >= ((scr_width - win_width) / 2) - 1 then // -1 - РґРµР»Р°РµРј РїСЂРёРѕСЂРёС‚РµС‚ РЅР° РїСЂР°РІС‹Р№ РєСЂР°Р№
           Left := Round( Screen.WorkAreaWidth - win_width - (scr_width - win_left - win_width) * k )
           else
           Left := Round(win_left * k);
 
         k := Screen.WorkAreaHeight / scr_height;
-        if win_top >= ((scr_height - win_height) / 2) - 1 then // -1 - делаем приоритет на нижний край
+        if win_top >= ((scr_height - win_height) / 2) - 1 then // -1 - РґРµР»Р°РµРј РїСЂРёРѕСЂРёС‚РµС‚ РЅР° РЅРёР¶РЅРёР№ РєСЂР°Р№
           Top := Round( Screen.WorkAreaHeight - win_height - (scr_height - win_top - win_height) * k )
           else
           Top  := Round(win_top * k);
 
-        // Корректировка значений
+        // РљРѕСЂСЂРµРєС‚РёСЂРѕРІРєР° Р·РЅР°С‡РµРЅРёР№
         if Left < 0                             then Left := 0;
         if Left + Width > Screen.WorkAreaWidth  then
           if Screen.WorkAreaWidth - Width < 0 then
@@ -1194,7 +1197,7 @@ function TfMainLinker.LoadXML(FileName: string): Boolean;
             Top := Screen.WorkAreaHeight - Height;
       end;
     end;
-    // Настройка "авто-опций"
+    // РќР°СЃС‚СЂРѕР№РєР° "Р°РІС‚Рѕ-РѕРїС†РёР№"
     DM.Options['AutoClose'].AsBoolean := (not DM.Options['AutoMinimize'].AsBoolean) and
                                          DM.Options['AutoClose'].AsBoolean;
     //**
@@ -1209,29 +1212,29 @@ begin
       nRoot    := nil;
       nOptions := nil;
       nAppList := nil;
-      // Загрузка XML
+      // Р—Р°РіСЂСѓР·РєР° XML
       DOM.LoadFromFile(FileName);
       if DOM.ChildNodes.Count > 0 then
         nRoot := DOM.DocumentElement;
-      // Загрузка данных
+      // Р—Р°РіСЂСѓР·РєР° РґР°РЅРЅС‹С…
       Result := Assigned(nRoot);
       if not Result then Exit;
 
       nOptions := nRoot.ChildNodes.FindNode(ndOptions);
       nAppList := nRoot.ChildNodes.FindNode(ndAppList);
-        // Загрузка данных для версии 2.3.x.x
+        // Р—Р°РіСЂСѓР·РєР° РґР°РЅРЅС‹С… РґР»СЏ РІРµСЂСЃРёРё 2.3.x.x
       if (nRoot.NodeName = ndRoot) and (nRoot.Attributes['version'] = verXML_11) then
       begin
         if Assigned(nAppList) then LoadAppList_v11(nAppList.ChildNodes, nil);
         if Assigned(nOptions) then LoadOptions(nOptions.ChildNodes);
       end else
-        // Загрузка данных для версии 2.2.x.x
+        // Р—Р°РіСЂСѓР·РєР° РґР°РЅРЅС‹С… РґР»СЏ РІРµСЂСЃРёРё 2.2.x.x
       if (nRoot.NodeName = ndRoot) and (nRoot.Attributes['version'] = verXML_10) then
       begin
         if Assigned(nAppList) then LoadAppList_v10(nAppList.ChildNodes, nil);
         if Assigned(nOptions) then LoadOptions(nOptions.ChildNodes);
       end else
-        // Загрузка данных для версий 2.1.x.x
+        // Р—Р°РіСЂСѓР·РєР° РґР°РЅРЅС‹С… РґР»СЏ РІРµСЂСЃРёР№ 2.1.x.x
       begin
         LoadOptionsFromIniFile;
         LoadAppList_v10(nRoot.ChildNodes, nil);
@@ -1256,14 +1259,14 @@ begin
 end;
 
 procedure TfMainLinker.RunProgs(ForceRunAsAdmin: Boolean = False);
-// ForceRunAsAdmin - принудительно запускать программы с правами админа
+// ForceRunAsAdmin - РїСЂРёРЅСѓРґРёС‚РµР»СЊРЅРѕ Р·Р°РїСѓСЃРєР°С‚СЊ РїСЂРѕРіСЂР°РјРјС‹ СЃ РїСЂР°РІР°РјРё Р°РґРјРёРЅР°
 
     procedure RunAsAdministrator(const AExeFile, AParamStr, ADirectory: string;
       AShowCmd: Integer);
     var
       shExecInfo: TShellExecuteInfo;
     begin
-      //  Запускает файл с повышенными привилегиями.
+      //  Р—Р°РїСѓСЃРєР°РµС‚ С„Р°Р№Р» СЃ РїРѕРІС‹С€РµРЅРЅС‹РјРё РїСЂРёРІРёР»РµРіРёСЏРјРё.
       shExecInfo.cbSize       := sizeof(ShellExecuteInfo);
       shExecInfo.fMask        := 0;
       shExecInfo.Wnd          := 0;
@@ -1376,7 +1379,7 @@ function TfMainLinker.SaveXML(Forcibly: Boolean = False): Boolean;
       fl: TDBFields;
       Node: IXMLNode;
   begin
-    // Размер/позиция окна
+    // Р Р°Р·РјРµСЂ/РїРѕР·РёС†РёСЏ РѕРєРЅР°
     Node := xmlNode.AddChild(ndScreen);
 
     Node.Attributes['scr_width']  := Screen.WorkAreaWidth;
@@ -1387,7 +1390,7 @@ function TfMainLinker.SaveXML(Forcibly: Boolean = False): Boolean;
     Node.Attributes['Width']  := Width;
     Node.Attributes['Height'] := Height;
 
-    // Сохранение параметров
+    // РЎРѕС…СЂР°РЅРµРЅРёРµ РїР°СЂР°РјРµС‚СЂРѕРІ
     fl := DM.Options.FieldList;
     for i := 0 to fl.Count - 1 do
     begin
@@ -1403,7 +1406,7 @@ begin
   try
     if Forcibly or (not fReadOnlyFS) then
     begin
-      // Делаем резервную копию
+      // Р”РµР»Р°РµРј СЂРµР·РµСЂРІРЅСѓСЋ РєРѕРїРёСЋ
       if (not fXML_Corrupted) and
          FileExists(flXML_Linker) and (UC_GetFileSize(flXML_Linker) > 0) then
       begin
@@ -1411,7 +1414,7 @@ begin
         RenameFile(flXML_Linker, flXML_Linker_Bak);
       end;
 
-      // Инициализация документа
+      // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РґРѕРєСѓРјРµРЅС‚Р°
       if DOM.ChildNodes.Count > 0 then
         nRoot := DOM.DocumentElement
         else
@@ -1431,7 +1434,7 @@ begin
       if not Assigned(nAppList) then
         nAppList := nRoot.AddChild(ndAppList);
 
-      // Сохраняем данные
+      // РЎРѕС…СЂР°РЅСЏРµРј РґР°РЅРЅС‹Рµ
       nOptions.ChildNodes.Clear;
       SaveOptions(nOptions);
 
@@ -1453,17 +1456,17 @@ end;
 procedure TfMainLinker.SelfUpdate(SilentMode: Boolean);
 var Ver: string;
 begin
-  // Проверка обновлений
+  // РџСЂРѕРІРµСЂРєР° РѕР±РЅРѕРІР»РµРЅРёР№
   if NewUpdateExists(Ver) then
   begin
     if SilentMode or
-       (MessageDlg('Доступна новая версия программы Linker v' + Ver + '.'#13#10 +
-                  'Установить эту версию сейчас?',
+       (MessageDlg('Р”РѕСЃС‚СѓРїРЅР° РЅРѕРІР°СЏ РІРµСЂСЃРёСЏ РїСЂРѕРіСЂР°РјРјС‹ Linker v' + Ver + '.'#13#10 +
+                  'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ СЌС‚Сѓ РІРµСЂСЃРёСЋ СЃРµР№С‡Р°СЃ?',
                   mtConfirmation, [mbYes, mbCancel], 0) = mrYes) then
       ufUpdater.CheckUpdate;
   end else
     if not SilentMode then
-      MessageDlg('Вы используете последнюю версию программы Linker.',
+      MessageDlg('Р’С‹ РёСЃРїРѕР»СЊР·СѓРµС‚Рµ РїРѕСЃР»РµРґРЅСЋСЋ РІРµСЂСЃРёСЋ РїСЂРѕРіСЂР°РјРјС‹ Linker.',
                   mtInformation, [mbOK], 0);
   //**
 end;
@@ -1485,7 +1488,7 @@ begin
   actSaveTree.Enabled := not fReadOnlyFS;
   actOptions.Enabled  := not fReadOnlyFS;
   if (not SilentMode) and fReadOnlyFS then
-    MessageDlg('Файлы конфигурации доступны только для чтения!', mtWarning, [mbOK], 0);
+    MessageDlg('Р¤Р°Р№Р»С‹ РєРѕРЅС„РёРіСѓСЂР°С†РёРё РґРѕСЃС‚СѓРїРЅС‹ С‚РѕР»СЊРєРѕ РґР»СЏ С‡С‚РµРЅРёСЏ!', mtWarning, [mbOK], 0);
 end;
 
 procedure TfMainLinker.ShowOptions(iShowHelp: Boolean);
@@ -1777,7 +1780,7 @@ var
           Cnv.Pen.Color   := GetColor_(GrColor, 1 - i * GrColorDec);
         end;
       end;
-      // Рисуем
+      // Р РёСЃСѓРµРј
       Cnv.FillRect(Rect(vIndent * i, CR.Top,
                    vIndent * (i + 1), CR.Bottom));
 
@@ -1827,7 +1830,7 @@ begin
     with TargetCanvas do
     begin
       vst_ := TVirtualStringTree(Sender);
-      //Настройка цветовой гаммы
+      //РќР°СЃС‚СЂРѕР№РєР° С†РІРµС‚РѕРІРѕР№ РіР°РјРјС‹
       CntColor    := DM.Options['AppList_ColorItem'].AsInteger;
       CntSelColor := DM.Options['AppList_ColorCurrentGroup'].AsInteger;
       GrColor     := DM.Options['AppList_ColorGroup'].AsInteger;
@@ -1839,14 +1842,14 @@ begin
       Pen.Width := 1;
 
       try
-      // Определяем уровень выделенного узла для подсветки дружественных
+      // РћРїСЂРµРґРµР»СЏРµРј СѓСЂРѕРІРµРЅСЊ РІС‹РґРµР»РµРЅРЅРѕРіРѕ СѓР·Р»Р° РґР»СЏ РїРѕРґСЃРІРµС‚РєРё РґСЂСѓР¶РµСЃС‚РІРµРЅРЅС‹С…
         if VT_IsNodeSibling(vst_, vst_.FocusedNode, Node)or
            VT_IsNodeParent(vst_, Node, vst_.NodeParent[vst_.FocusedNode]) then
           SelLvl := vst_.GetNodeLevel(vst_.FocusedNode)
           else
           SelLvl := -1;
       except
-        // Иногда при получении уровня узла вылетает ошибка
+        // РРЅРѕРіРґР° РїСЂРё РїРѕР»СѓС‡РµРЅРёРё СѓСЂРѕРІРЅСЏ СѓР·Р»Р° РІС‹Р»РµС‚Р°РµС‚ РѕС€РёР±РєР°
         SelLvl := -1;
       end;
 
@@ -1855,21 +1858,21 @@ begin
       if not DM.Options['ClassicAppList'].AsBoolean then
       begin
         vLvl := (nLvl - integer(Td^.rType <> itGroup));
-        // Рисуем ячейку
+        // Р РёСЃСѓРµРј СЏС‡РµР№РєСѓ
         PaintCell(nLvl, Td^.rType);
 
-        //  Рисуем вертикальную линию группы
+        //  Р РёСЃСѓРµРј РІРµСЂС‚РёРєР°Р»СЊРЅСѓСЋ Р»РёРЅРёСЋ РіСЂСѓРїРїС‹
         PaintVertLines(vLvl, Td^.rType = itGroup);
 
-        //  ... и горизонтальную линию группы
+        //  ... Рё РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅСѓСЋ Р»РёРЅРёСЋ РіСЂСѓРїРїС‹
         PaintHorsLines(vLvl, Td^.rType = itGroup);
 
       end;
 
-      // Рисуем фокус
+      // Р РёСЃСѓРµРј С„РѕРєСѓСЃ
       PaintFocus(nLvl, Td^.rType = itGroup);
 
-      // Рисуем разделитель
+      // Р РёСЃСѓРµРј СЂР°Р·РґРµР»РёС‚РµР»СЊ
       if Td^.rType = itDivider then
       begin
         Cnv.Pen.Color := clGray;
@@ -1921,7 +1924,7 @@ var
     Files: PAnsiChar;
     Str: String;
 begin
-    // На этот раз нас интересует есть ли в буфере CF_HDROP формат
+    // РќР° СЌС‚РѕС‚ СЂР°Р· РЅР°СЃ РёРЅС‚РµСЂРµСЃСѓРµС‚ РµСЃС‚СЊ Р»Рё РІ Р±СѓС„РµСЂРµ CF_HDROP С„РѕСЂРјР°С‚
     with FormatEtc do
     begin
       cfFormat := CF_HDROP;
@@ -1938,28 +1941,28 @@ begin
         if Assigned(OLEData) then
         begin
           try
-            // А вот с этим Я долго мучался. В Microsoft зажрались и не дали
-            // примера работы с DROPFILES структурой.
-            // Оказывается, список брошенных файлов хранится в адресе
-            // структуры
-            // + offset, который и есть OLEData^.pFiles.
+            // Рђ РІРѕС‚ СЃ СЌС‚РёРј РЇ РґРѕР»РіРѕ РјСѓС‡Р°Р»СЃСЏ. Р’ Microsoft Р·Р°Р¶СЂР°Р»РёСЃСЊ Рё РЅРµ РґР°Р»Рё
+            // РїСЂРёРјРµСЂР° СЂР°Р±РѕС‚С‹ СЃ DROPFILES СЃС‚СЂСѓРєС‚СѓСЂРѕР№.
+            // РћРєР°Р·С‹РІР°РµС‚СЃСЏ, СЃРїРёСЃРѕРє Р±СЂРѕС€РµРЅРЅС‹С… С„Р°Р№Р»РѕРІ С…СЂР°РЅРёС‚СЃСЏ РІ Р°РґСЂРµСЃРµ
+            // СЃС‚СЂСѓРєС‚СѓСЂС‹
+            // + offset, РєРѕС‚РѕСЂС‹Р№ Рё РµСЃС‚СЊ OLEData^.pFiles.
             Files := PAnsiChar(OLEData) + OLEData^.pFiles;
-            // Список оканчивается двойным null символом
+            // РЎРїРёСЃРѕРє РѕРєР°РЅС‡РёРІР°РµС‚СЃСЏ РґРІРѕР№РЅС‹Рј null СЃРёРјРІРѕР»РѕРј
             while Files^ <> #0 do
             begin
               if OLEData^.fWide then
               begin
                 Str := PWideChar(Files);
-                // +1 нужен для того, чтобы перешагнуть null символ одного
-                // из имён файлов в списке
+                // +1 РЅСѓР¶РµРЅ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїРµСЂРµС€Р°РіРЅСѓС‚СЊ null СЃРёРјРІРѕР» РѕРґРЅРѕРіРѕ
+                // РёР· РёРјС‘РЅ С„Р°Р№Р»РѕРІ РІ СЃРїРёСЃРєРµ
                 Inc(Files, (Length(PWideChar(Files)) + 1)*SizeOf(WideChar));
               end
               else begin
                 Str := string(Files);
-                // Аналогично
+                // РђРЅР°Р»РѕРіРёС‡РЅРѕ
                 Inc(Files, (Length(PChar(Files)) + 1)*SizeOf(Char));
               end;
-              // Заполняем список
+              // Р—Р°РїРѕР»РЅСЏРµРј СЃРїРёСЃРѕРє
               StrList.Add(Str);
               //**
             end;
@@ -1985,8 +1988,8 @@ var
 begin
 //
   Nodes := nil;
-  // Определяем куда добавлять узел в зависимости от того, куда была
-  // брошена ветка.
+  // РћРїСЂРµРґРµР»СЏРµРј РєСѓРґР° РґРѕР±Р°РІР»СЏС‚СЊ СѓР·РµР» РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ С‚РѕРіРѕ, РєСѓРґР° Р±С‹Р»Р°
+  // Р±СЂРѕС€РµРЅР° РІРµС‚РєР°.
   case Mode of
     dmAbove:
       AttachMode := amInsertBefore;
@@ -2005,12 +2008,12 @@ begin
 
   if Source is TVirtualStringTree then
   begin
-    // Вставка из VT. Можем спокойно пользоваться его методами
-    // копирования и перемещения.
+    // Р’СЃС‚Р°РІРєР° РёР· VT. РњРѕР¶РµРј СЃРїРѕРєРѕР№РЅРѕ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РµРіРѕ РјРµС‚РѕРґР°РјРё
+    // РєРѕРїРёСЂРѕРІР°РЅРёСЏ Рё РїРµСЂРµРјРµС‰РµРЅРёСЏ.
     Effect := DROPEFFECT_MOVE;
-    // Получем список узлов, которые будут участвовать в Drag&Drop
+    // РџРѕР»СѓС‡РµРј СЃРїРёСЃРѕРє СѓР·Р»РѕРІ, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ СѓС‡Р°СЃС‚РІРѕРІР°С‚СЊ РІ Drag&Drop
     Nodes := VST.GetSortedSelection(True);
-    // И работаем с каждым
+    // Р СЂР°Р±РѕС‚Р°РµРј СЃ РєР°Р¶РґС‹Рј
     for i := 0 to High(Nodes) do
       VST.MoveTo(Nodes[i], TargetNode, AttachMode, False);
     fNeedSave := True;
@@ -2048,14 +2051,14 @@ begin
     for i := 0 to Length(Nodes) - 1 do
     begin
       Accept :=
-        // Узел не должен быть родителем ветки, в которую производится вставка
+        // РЈР·РµР» РЅРµ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ СЂРѕРґРёС‚РµР»РµРј РІРµС‚РєРё, РІ РєРѕС‚РѕСЂСѓСЋ РїСЂРѕРёР·РІРѕРґРёС‚СЃСЏ РІСЃС‚Р°РІРєР°
         ((not (Source is TVirtualStringTree)) or
         (not VT_IsNodeParent(Sender, Sender.DropTargetNode, Nodes[i])))
 
-        // Также, узел не должен равняться ветке-местоназначению вставки.
-        // Т.е. мы должны запретить вставку узла в самого себя.
+        // РўР°РєР¶Рµ, СѓР·РµР» РЅРµ РґРѕР»Р¶РµРЅ СЂР°РІРЅСЏС‚СЊСЃСЏ РІРµС‚РєРµ-РјРµСЃС‚РѕРЅР°Р·РЅР°С‡РµРЅРёСЋ РІСЃС‚Р°РІРєРё.
+        // Рў.Рµ. РјС‹ РґРѕР»Р¶РЅС‹ Р·Р°РїСЂРµС‚РёС‚СЊ РІСЃС‚Р°РІРєСѓ СѓР·Р»Р° РІ СЃР°РјРѕРіРѕ СЃРµР±СЏ.
         {and ((Sender.DropTargetNode <> Nodes[i]))};
-      // Отключаем вставку, если хотя бы одно из условий вернуло False
+      // РћС‚РєР»СЋС‡Р°РµРј РІСЃС‚Р°РІРєСѓ, РµСЃР»Рё С…РѕС‚СЏ Р±С‹ РѕРґРЅРѕ РёР· СѓСЃР»РѕРІРёР№ РІРµСЂРЅСѓР»Рѕ False
       if (TTreeData(Sender.GetNodeData(Sender.DropTargetNode)^).rType <> itGroup)
           and
          (Mode = dmOnNode) then Accept := False;
@@ -2161,11 +2164,11 @@ begin
           FilterTree;
       end;
     #27:
-      if IsFiltered then // По первому Esc сбрасываем фильтр, по второму сворачиваем окно
+      if IsFiltered then // РџРѕ РїРµСЂРІРѕРјСѓ Esc СЃР±СЂР°СЃС‹РІР°РµРј С„РёР»СЊС‚СЂ, РїРѕ РІС‚РѕСЂРѕРјСѓ СЃРІРѕСЂР°С‡РёРІР°РµРј РѕРєРЅРѕ
         FilterTree
       else
         MinimizeToTray;
-    #32..#126, #192..#255: //Сиволы, цифры
+    #32..#126, #192..#255: //РЎРёРІРѕР»С‹, С†РёС„СЂС‹
       begin
         FilterValue := FilterValue + Key;
         FilterTree(FilterValue);
@@ -2233,7 +2236,7 @@ begin
   UcBtn_Info.CustomHint;
 end;
 
-// перехват Windows-сообщений при нажатии горячих клавиш
+// РїРµСЂРµС…РІР°С‚ Windows-СЃРѕРѕР±С‰РµРЅРёР№ РїСЂРё РЅР°Р¶Р°С‚РёРё РіРѕСЂСЏС‡РёС… РєР»Р°РІРёС€
 procedure TfMainLinker.WMHotKey(var HTK: TWMHotKey);
 begin
   if HTK.HotKey <> GHK_ShowApp.HotkeyID then
@@ -2257,8 +2260,8 @@ end;
 
 procedure TfMainLinker.WMQueryEndSession(var Message: TWMQueryEndSession);
 begin
-  // Этот метод вызывается при завершении работы Windows
-  Message.Result := 1; // Сообщаем Windows, что можно продолжать выключение ПК
+  // Р­С‚РѕС‚ РјРµС‚РѕРґ РІС‹Р·С‹РІР°РµС‚СЃСЏ РїСЂРё Р·Р°РІРµСЂС€РµРЅРёРё СЂР°Р±РѕС‚С‹ Windows
+  Message.Result := 1; // РЎРѕРѕР±С‰Р°РµРј Windows, С‡С‚Рѕ РјРѕР¶РЅРѕ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ РІС‹РєР»СЋС‡РµРЅРёРµ РџРљ
   fCanClose := True;
   Close;
 end;
@@ -2271,15 +2274,15 @@ end;
 procedure TfMainLinker.MinimizeToTray;
 begin
   Visible := False;
-  ShowWindow(Handle, SW_HIDE); // Скрываем программу
-  ShowWindow(Application.Handle, SW_HIDE); // Скрываем кнопку с TaskBar'а
+  ShowWindow(Handle, SW_HIDE); // РЎРєСЂС‹РІР°РµРј РїСЂРѕРіСЂР°РјРјСѓ
+  ShowWindow(Application.Handle, SW_HIDE); // РЎРєСЂС‹РІР°РµРј РєРЅРѕРїРєСѓ СЃ TaskBar'Р°
 end;
 
 procedure TfMainLinker.RestoreFromTray;
 begin
   Visible := True;
-  ShowWindow(Application.Handle, SW_SHOW); // Восстанавливаем кнопку программы
-  ShowWindow(Handle, SW_SHOWNORMAL); // Восстанавливаем окно программы
+  ShowWindow(Application.Handle, SW_SHOW); // Р’РѕСЃСЃС‚Р°РЅР°РІР»РёРІР°РµРј РєРЅРѕРїРєСѓ РїСЂРѕРіСЂР°РјРјС‹
+  ShowWindow(Handle, SW_SHOWNORMAL); // Р’РѕСЃСЃС‚Р°РЅР°РІР»РёРІР°РµРј РѕРєРЅРѕ РїСЂРѕРіСЂР°РјРјС‹
   Application.BringToFront;
   BringToFront;
   //--
