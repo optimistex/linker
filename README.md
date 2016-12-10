@@ -4,7 +4,7 @@ Linker - запуск программ (альтернатива меню пус
 
 [Сайт программы](http://optitrex.ru)
 
-Текущая версия: **[Linker 2.3.1.17](https://github.com/optimistex/linker/releases/download/v2.3.1.17/Linker.exe)**
+Текущая версия: **[Linker 2.3.1.19](https://github.com/optimistex/linker/releases/download/v2.3.1.19/Linker.exe)**
 
 # Основные возможности приложения
 
