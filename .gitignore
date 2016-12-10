@@ -7,5 +7,6 @@ modelsupport_*
 *.dproj.local
 output/*.elf
 output/*.map
+output/*.exe
 project/*.dsk
 project/*.identcache

@@ -101,7 +101,7 @@ begin
   VST.Images.ReplaceIcon(Data.rImageIndex, Ico);
   TTreeData(VST.GetNodeData(Node)^).rNeedIcon   := false;
   TTreeData(VST.GetNodeData(Node)^).rFileExists := fFileExists;
-//  UpdateNode(VST, Node);
+  UpdateNode(VST, Node); // Обновление видимости узлов с учетом текущих настроек
   VST.InvalidateNode(Node);
 end;
 

@@ -1,4 +1,4 @@
-unit ufMain2;
+﻿unit ufMain2;
 
 interface
 
@@ -172,6 +172,9 @@ type
     procedure VSTClick(Sender: TObject);
     procedure ActShowCorruptedLinksExecute(Sender: TObject);
     procedure actCloneExecute(Sender: TObject);
+    procedure VSTGetHint(Sender: TBaseVirtualTree; Node: PVirtualNode;
+      Column: TColumnIndex; var LineBreakStyle: TVTTooltipLineBreakStyle;
+      var HintText: string);
   private
     FilterValue: string;
     fNeedSave: Boolean;
@@ -433,6 +436,26 @@ end;
 procedure TfMainLinker.actHelpExecute(Sender: TObject);
 begin
   ShowOptions(True);
+end;
+
+procedure TfMainLinker.VSTGetHint(Sender: TBaseVirtualTree; Node: PVirtualNode;
+  Column: TColumnIndex; var LineBreakStyle: TVTTooltipLineBreakStyle;
+  var HintText: string);
+var Td : PTreeData;
+begin
+  if not DM.Options['MouseHinting'].AsBoolean then exit;
+
+  Td := VST.GetNodeData(Node);
+  if Assigned(Td) then
+  begin
+    if Td^.rType = itLink then
+      HintText := Trim(Td^.rPath + ' ' +
+                       Td^.rParameters + #13#10 +
+                       'Количество запусков: ' + IntToStr(Td^.rNumberOfStarts) + #13#10#13#10 +
+                       Td^.rNote)
+      else
+      HintText := Trim(Td^.rNote);
+  end;
 end;
 
 procedure TfMainLinker.actInfoExecute(Sender: TObject);
@@ -880,6 +903,7 @@ begin
     Options['AutoCollapseGroups'].AsBoolean           := False;
     Options['SkipCorruptedLinksOnFilter'].AsBoolean   := False;
     Options['Stat_NumberOfStarts'].AsBoolean          := True;
+    Options['MouseHinting'].AsBoolean                 := False;
     Options['AutoUpdate_Enabled'].AsBoolean           := True;
     Options['AutoUpdate_date'].AsDateTime             := Now;
 
@@ -1507,6 +1531,8 @@ var R: TRect;
     P: TPoint;
     Td: PTreeData;
 begin
+  if DM.Options['MouseHinting'].AsBoolean then exit;
+
   if not Assigned(Node) then
     UcBtn_Info.Visible := False
   else begin

@@ -63,6 +63,7 @@ object fMainLinker: TfMainLinker
     OnGetText = VSTGetText
     OnPaintText = VSTPaintText
     OnGetImageIndex = VSTGetImageIndex
+    OnGetHint = VSTGetHint
     OnInitNode = VSTInitNode
     OnKeyPress = VSTKeyPress
     OnMeasureItem = VSTMeasureItem

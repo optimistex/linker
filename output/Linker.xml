@@ -14,8 +14,9 @@
 		<option name="AutoCollapseGroups" value="0"/>
 		<option name="SkipCorruptedLinksOnFilter" value="1"/>
 		<option name="Stat_NumberOfStarts" value="1"/>
+		<option name="MouseHinting" value="1"/>
 		<option name="AutoUpdate_Enabled" value="1"/>
-		<option name="AutoUpdate_date" value="20.08.2016 16:55:44"/>
+		<option name="AutoUpdate_date" value="11.12.2016 22:06:20"/>
 		<option name="AppList_ColorLinkText" value="0"/>
 		<option name="AppList_ColorLinkTextErr" value="255"/>
 		<option name="AppList_ColorGroupText" value="15793151"/>
@@ -31,14 +32,14 @@
 	</options>
 	<applist>
 		<el type="link" name="Linker.xml_2012.01.04_(0)" path="Linker.xml_2012.01.04_(0).7z" icon="Linker.xml_2012.01.04_(0).7z|0"/>
-		<el type="group" name="123" expanded="true">
+		<el type="group" name="123" note="dyth" expanded="true">
 			<el type="link" name="Калькулятор" note="Электронный ''Калькулятор'' вполне способен заменить обычный ручной калькулятор." path="%SystemRoot%\system32\calc.exe" icon="%SystemRoot%\system32\calc.exe|0" numstarts="3"/>
 			<el type="link" name="Logs" path="Logs" icon="Logs|0"/>
 		</el>
-		<el type="link" name="Центр управления программами" note="Продукт издательства «Учитель»" path="C:\Program Files\Издательство Учитель\Центр управления программами\AppCenterClient.exe" icon="C:\Program Files\Издательство Учитель\Центр управления программами\AppCenterClient.exe|0" focused="true" selected="true"/>
+		<el type="link" name="Центр управления программами" note="Продукт издательства «Учитель»" path="C:\Program Files\Издательство Учитель\Центр управления программами\AppCenterClient.exe" icon="C:\Program Files\Издательство Учитель\Центр управления программами\AppCenterClient.exe|0"/>
 		<el type="link" name="testprog++" path="C:\Documents and Settings\admin\Рабочий стол\testprog++.rdp" icon="C:\Documents and Settings\admin\Рабочий стол\testprog++.rdp|0"/>
 		<el type="divider"/>
-		<el type="link" name="Notepad++" path="C:\Program Files\Notepad++\notepad++.exe" icon="C:\Program Files\Notepad++\notepad++.exe|0" numstarts="1"/>
+		<el type="link" name="Notepad++" path="C:\Program Files\Notepad++\notepad++.exe" icon="C:\Program Files\Notepad++\notepad++.exe|0" numstarts="1" focused="true" selected="true"/>
 		<el type="link" name="bug_reports - optimist" path="\\optimist\bug_reports\optimist" icon="\\optimist\bug_reports\optimist|0" numstarts="1"/>
 		<el type="link" name="testprog" path="C:\Documents and Settings\admin\Рабочий стол\testprog.rdp" icon="C:\Documents and Settings\admin\Рабочий стол\testprog.rdp|0"/>
 		<el type="link" name="Paint" note="Позволяет создавать, просматривать и редактировать рисунки или отсканированные фотографии." path="%SystemRoot%\system32\mspaint.exe" icon="%SystemRoot%\system32\mspaint.exe|0"/>

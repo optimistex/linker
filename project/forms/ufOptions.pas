@@ -56,6 +56,7 @@ type
     UcLbl_TitleUpdateDate: TUcLabel;
     UcWBtn_ResetUpdateDate: TUcWinButton;
     UcLbl_UpdateDate: TUcLabel;
+    ChBox_MouseHinting: TCheckBox;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure UcWBtn_OKClick(Sender: TObject);
     procedure ChBox_AlphaBlendClick(Sender: TObject);
@@ -333,11 +334,13 @@ begin
     // Поверх остальных окон
     fObj['StayOnTop'].AsBoolean           := ChBox_StayOnTop.Checked;
     // Автосворачивание групп
-    fObj['AutoCollapseGroups'].AsBoolean := ChBox_AutoCollapseGroups.Checked;
+    fObj['AutoCollapseGroups'].AsBoolean  := ChBox_AutoCollapseGroups.Checked;
     // Вести статистику количества запусков программы
     fObj['Stat_NumberOfStarts'].AsBoolean := ChBox_NumberOfStarts.Checked;
+    // Показывать подсказки сразу при наведении мыши
+    fObj['MouseHinting'].AsBoolean := ChBox_MouseHinting.Checked;
     // Выполнять автоматическое обновление программы
-    fObj['AutoUpdate_Enabled'].AsBoolean          := ChBox_AutoUpdate.Checked;
+    fObj['AutoUpdate_Enabled'].AsBoolean  := ChBox_AutoUpdate.Checked;
   end else
     fObj.FieldList.AssignFields(fSaveFields);
 
@@ -403,6 +406,8 @@ begin
   ChBox_SkipCorruptedLinks.Checked  := fObj['SkipCorruptedLinksOnFilter'].AsBoolean;
     // Вести статистику количества запусков программы
   ChBox_NumberOfStarts.Checked      := fObj['Stat_NumberOfStarts'].AsBoolean;
+    // Показывать подсказки сразу при наведении мыши
+  ChBox_MouseHinting.Checked        := fObj['MouseHinting'].AsBoolean;
 
     // Выполнять автоматическое обновление программы
   ChBox_AutoUpdate.Checked          := fObj['AutoUpdate_Enabled'].AsBoolean;
